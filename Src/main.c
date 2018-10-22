@@ -73,12 +73,19 @@ GPIO_TypeDef * ledArrayPorts[] = { L_TRIG_LED_GPIO_Port, R_TRIG_LED_GPIO_Port,
 L_THUMB_LED_GPIO_Port, R_THUMB_LED_GPIO_Port, PITCH_LED_GPIO_Port,
 ROLL_LED_GPIO_Port, STATUS_GPIO_Port, AUX_GPIO_Port };
 
-int8_t buffer[3];
+
+
 uint32_t ADC1ConvertedValues[ADC_BUFFER / 2];
 volatile int32_t adcData1, adcData2;
 volatile uint16_t adcCounter = 0;
 volatile uint32_t yoke1, yoke2;
 volatile int ledBuffPos = 0;
+
+typedef struct{
+	uint8_t xbuff[2];
+	uint8_t ybuff[2];
+	uint8_t buttons;
+}buffer;
 
 struct yokeMaxMin {
 	uint32_t rollMax;
@@ -106,9 +113,10 @@ static void MX_ADC_Init(void);
 int main(void) {
 
 	/* USER CODE BEGIN 1 */
-	buffer[0] = 0;
-	buffer[1] = 0;
-	buffer[2] = 0;
+
+	buffer buff;
+	buff.buttons = 0;
+	//buff.buttons = 0;
 
 	/*Setup initial yoke max and min ranges*/
 	volatile struct yokeMaxMin bounds;
@@ -215,39 +223,39 @@ int main(void) {
 
 		//S1_LEFT_TRIG_Pin
 		if (HAL_GPIO_ReadPin(S1_LEFT_TRIG_GPIO_Port, S1_LEFT_TRIG_Pin) == 0) {
-			buffer[2] |= 0b00000001;
+			buff.buttons |= 0b00000001;
 			HAL_GPIO_WritePin(ledArrayPorts[0], ledArrayPins[0],
 					GPIO_PIN_RESET);
 		} else {
-			buffer[2] &= ~(0b00000001);
+			buff.buttons &= ~(0b00000001);
 			HAL_GPIO_WritePin(ledArrayPorts[0], ledArrayPins[0], GPIO_PIN_SET);
 		}
 
 		if (HAL_GPIO_ReadPin(S2_RIGHT_TRIG_GPIO_Port, S2_RIGHT_TRIG_Pin) == 0) {
-			buffer[2] |= 0b00000010;
+			buff.buttons |= 0b00000010;
 			HAL_GPIO_WritePin(ledArrayPorts[1], ledArrayPins[1],
 					GPIO_PIN_RESET);
 		} else {
-			buffer[2] &= ~(0b00000010);
+			buff.buttons &= ~(0b00000010);
 			HAL_GPIO_WritePin(ledArrayPorts[1], ledArrayPins[1], GPIO_PIN_SET);
 		}
 		if (HAL_GPIO_ReadPin(S3_LEFT_THUMB_GPIO_Port, S3_LEFT_THUMB_Pin) == 0) {
-			buffer[2] |= 0b00000100;
+			buff.buttons |= 0b00000100;
 			HAL_GPIO_WritePin(ledArrayPorts[2], ledArrayPins[2],
 					GPIO_PIN_RESET);
 
 		} else {
-			buffer[2] &= ~(0b00000100);
+			buff.buttons &= ~(0b00000100);
 			HAL_GPIO_WritePin(ledArrayPorts[2], ledArrayPins[2], GPIO_PIN_SET);
 		}
 		if (HAL_GPIO_ReadPin(S4_RIGHT_THUMB_GPIO_Port, S4_RIGHT_THUMB_Pin)
 				== 0) {
-			buffer[2] |= 0b00001000;
+			buff.buttons |= 0b00001000;
 			HAL_GPIO_WritePin(ledArrayPorts[3], ledArrayPins[3],
 					GPIO_PIN_RESET);
 
 		} else {
-			buffer[2] &= ~(0b00001000);
+			buff.buttons &= ~(0b00001000);
 			HAL_GPIO_WritePin(ledArrayPorts[3], ledArrayPins[3], GPIO_PIN_SET);
 		}
 
@@ -279,6 +287,7 @@ int main(void) {
 			HAL_GPIO_WritePin(ledArrayPorts[4], ledArrayPins[4], GPIO_PIN_SET);
 		}
 
+#ifdef OLD
 		/*scale 12 bit ADC value depending on the boundaries and convert to 8 bit number*/
 
 		buffer[1] = ((yoke2 - bounds.yawMin) * 255)
@@ -286,12 +295,31 @@ int main(void) {
 		buffer[0] = ((yoke1 - bounds.rollMin) * 255)
 				/ (4095 - (4095 - bounds.rollMax)) - 127;
 
-		USBD_HID_SendReport(&hUsbDeviceFS, buffer, 3);
+
 		//HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
-		//buffer[2] = 0b00000000;
+		//buff.buttons = 0b00000000;
 
 		/*Turn off LEDS*/
+#endif
+		//Split 12 bit data into two bytes, little endian
+		//X-Axis
+		volatile int16_t x = ((yoke2 - bounds.yawMin)*4096)
+						/ (4096 - (4096 - bounds.yawMax));
+		x -= 2047;
 
+		buff.xbuff[0] = x & 0xFF;
+		buff.xbuff[1] = x >> 8;
+		//Y-Axis
+		x = ((yoke1 - bounds.rollMin) * 4096)
+						/ (4096 - (4096 - bounds.rollMax));
+		x -= 2047;
+
+		buff.ybuff[0] = x & 0xFF;
+		buff.ybuff[1] = x >> 8;
+
+
+
+		USBD_HID_SendReport(&hUsbDeviceFS, &buff, 5);
 	}
 	/* USER CODE END 3 */
 
