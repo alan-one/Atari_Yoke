@@ -61,8 +61,8 @@ DMA_HandleTypeDef hdma_adc;
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
 #define LED_BOUNDS 200
-#define POLLING_DELAY 50
-#define BOUND_BUFFER 10
+#define POLLING_DELAY 10
+#define BOUND_BUFFER 100
 #define LED_STARTUP_DELAY 50
 #define NUMBER_LEDS 8
 #define ADC_BUFFER 20
@@ -73,25 +73,25 @@ GPIO_TypeDef * ledArrayPorts[] = { L_TRIG_LED_GPIO_Port, R_TRIG_LED_GPIO_Port,
 L_THUMB_LED_GPIO_Port, R_THUMB_LED_GPIO_Port, PITCH_LED_GPIO_Port,
 ROLL_LED_GPIO_Port, STATUS_GPIO_Port, AUX_GPIO_Port };
 
-
-
 uint32_t ADC1ConvertedValues[ADC_BUFFER / 2];
 volatile int32_t adcData1, adcData2;
 volatile uint16_t adcCounter = 0;
-volatile uint32_t yoke1, yoke2;
+volatile uint32_t yoke1 = 0;
+volatile uint32_t yoke2 = 0;
 volatile int ledBuffPos = 0;
+uint8_t adcDataReady = 0;
 
-typedef struct{
+typedef struct {
 	uint8_t xbuff[2];
 	uint8_t ybuff[2];
 	uint8_t buttons;
-}buffer;
+} buffer;
 
 struct yokeMaxMin {
-	uint32_t rollMax;
-	uint32_t rollMin;
-	uint32_t yawMax;
-	uint32_t yawMin;
+	int32_t rollMax;
+	int32_t rollMin;
+	int32_t yawMax;
+	int32_t yawMin;
 };
 
 /* USER CODE END PV */
@@ -113,6 +113,9 @@ static void MX_ADC_Init(void);
 int main(void) {
 
 	/* USER CODE BEGIN 1 */
+
+	int16_t lastX = 0;
+	int16_t lastY = 0;
 
 	buffer buff;
 	buff.buttons = 0;
@@ -152,42 +155,41 @@ int main(void) {
 	/* USER CODE BEGIN 2 */
 
 	//LED Startup sequence
+	for (int i = 0; i < NUMBER_LEDS; i++) {
+		HAL_GPIO_WritePin(ledArrayPorts[i], ledArrayPins[i], GPIO_PIN_RESET);
+		HAL_Delay(LED_STARTUP_DELAY);
+	}
+	for (int i = NUMBER_LEDS; i > 0; i--) {
+		HAL_GPIO_WritePin(ledArrayPorts[i - 1], ledArrayPins[i - 1],
+				GPIO_PIN_SET);
+		HAL_Delay(LED_STARTUP_DELAY);
+	}
 
-	 for (int i = 0; i < NUMBER_LEDS; i++) {
-	 HAL_GPIO_WritePin(ledArrayPorts[i], ledArrayPins[i], GPIO_PIN_RESET);
-	 HAL_Delay(LED_STARTUP_DELAY);
-	 }
-	 for (int i = NUMBER_LEDS; i > 0; i--) {
-	 HAL_GPIO_WritePin(ledArrayPorts[i - 1], ledArrayPins[i - 1],
-	 GPIO_PIN_SET);
-	 HAL_Delay(LED_STARTUP_DELAY);
-	 }
+	for (int i = 0; i < NUMBER_LEDS; i++) {
+		if (i == 0) {
+			HAL_GPIO_WritePin(ledArrayPorts[i], ledArrayPins[i],
+					GPIO_PIN_RESET);
+		} else if (i == 1) {
+			HAL_GPIO_WritePin(ledArrayPorts[i - 1], ledArrayPins[i - 1],
+					GPIO_PIN_SET);
+			HAL_GPIO_WritePin(ledArrayPorts[i], ledArrayPins[i],
+					GPIO_PIN_RESET);
 
-	 for (int i = 0; i < NUMBER_LEDS; i++) {
-	 if (i == 0) {
-	 HAL_GPIO_WritePin(ledArrayPorts[i], ledArrayPins[i],
-	 GPIO_PIN_RESET);
-	 } else if (i == 1) {
-	 HAL_GPIO_WritePin(ledArrayPorts[i - 1], ledArrayPins[i - 1],
-	 GPIO_PIN_SET);
-	 HAL_GPIO_WritePin(ledArrayPorts[i], ledArrayPins[i],
-	 GPIO_PIN_RESET);
+		} else if (i == NUMBER_LEDS - 1) {
+			HAL_GPIO_WritePin(ledArrayPorts[i - 1], ledArrayPins[i - 1],
+					GPIO_PIN_SET);
+			HAL_GPIO_WritePin(ledArrayPorts[i], ledArrayPins[i], GPIO_PIN_SET);
+		} else {
+			HAL_GPIO_WritePin(ledArrayPorts[i - 1], ledArrayPins[i - 1],
+					GPIO_PIN_SET);
+			HAL_GPIO_WritePin(ledArrayPorts[i], ledArrayPins[i],
+					GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(ledArrayPorts[i + 1], ledArrayPins[i + 1],
+					GPIO_PIN_RESET);
 
-	 } else if (i == NUMBER_LEDS - 1) {
-	 HAL_GPIO_WritePin(ledArrayPorts[i - 1], ledArrayPins[i - 1],
-	 GPIO_PIN_SET);
-	 HAL_GPIO_WritePin(ledArrayPorts[i], ledArrayPins[i], GPIO_PIN_SET);
-	 } else {
-	 HAL_GPIO_WritePin(ledArrayPorts[i - 1], ledArrayPins[i - 1],
-	 GPIO_PIN_SET);
-	 HAL_GPIO_WritePin(ledArrayPorts[i], ledArrayPins[i],
-	 GPIO_PIN_RESET);
-	 HAL_GPIO_WritePin(ledArrayPorts[i + 1], ledArrayPins[i + 1],
-	 GPIO_PIN_RESET);
-
-	 }
-	 HAL_Delay(LED_STARTUP_DELAY);
-	 }
+		}
+		HAL_Delay(LED_STARTUP_DELAY);
+	}
 
 	/*
 	 for (int i = NUMBER_LEDS; i > 0; i--) {
@@ -274,52 +276,45 @@ int main(void) {
 		}
 
 		/*Illuminate LED on boundary edges for roll and yaw*/
-		if ((yoke1 < bounds.rollMin + LED_BOUNDS) || (yoke1 > bounds.rollMax - LED_BOUNDS)) {
+		if ((yoke1 < bounds.rollMin + LED_BOUNDS)
+				|| (yoke1 > bounds.rollMax - LED_BOUNDS)) {
 			HAL_GPIO_WritePin(ledArrayPorts[5], ledArrayPins[5],
 					GPIO_PIN_RESET);
 		} else {
 			HAL_GPIO_WritePin(ledArrayPorts[5], ledArrayPins[5], GPIO_PIN_SET);
 		}
-		if ((yoke2 < bounds.yawMin + LED_BOUNDS) || (yoke2 > bounds.yawMax - LED_BOUNDS)) {
+		if ((yoke2 < bounds.yawMin + LED_BOUNDS)
+				|| (yoke2 > bounds.yawMax - LED_BOUNDS)) {
 			HAL_GPIO_WritePin(ledArrayPorts[4], ledArrayPins[4],
 					GPIO_PIN_RESET);
 		} else {
 			HAL_GPIO_WritePin(ledArrayPorts[4], ledArrayPins[4], GPIO_PIN_SET);
 		}
 
-#ifdef OLD
-		/*scale 12 bit ADC value depending on the boundaries and convert to 8 bit number*/
-
-		buffer[1] = ((yoke2 - bounds.yawMin) * 255)
-				/ (4095 - (4095 - bounds.yawMax)) - 127;
-		buffer[0] = ((yoke1 - bounds.rollMin) * 255)
-				/ (4095 - (4095 - bounds.rollMax)) - 127;
-
-
-		//HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
-		//buff.buttons = 0b00000000;
-
-		/*Turn off LEDS*/
-#endif
-		//Split 12 bit data into two bytes, little endian
+		//Split 12 bit data into two bytes
 		//X-Axis
-		volatile int16_t x = ((yoke2 - bounds.yawMin)*4096)
-						/ (4096 - (4096 - bounds.yawMax));
-		x -= 2047;
+		int32_t x = ((yoke2 - bounds.yawMin) * 65536)
+				/ (65536 - (65536 - bounds.yawMax));
+		x -= 32767;
 
 		buff.xbuff[0] = x & 0xFF;
 		buff.xbuff[1] = x >> 8;
 		//Y-Axis
-		x = ((yoke1 - bounds.rollMin) * 4096)
-						/ (4096 - (4096 - bounds.rollMax));
-		x -= 2047;
+		x = ((yoke1 - bounds.rollMin) * 65536)
+				/ (65536 - (65536 - bounds.rollMax));
+		x -= 32767;
 
 		buff.ybuff[0] = x & 0xFF;
 		buff.ybuff[1] = x >> 8;
-
-
-
-		USBD_HID_SendReport(&hUsbDeviceFS, &buff, 5);
+		if(adcDataReady == 1){
+			USBD_HID_SendReport(&hUsbDeviceFS, &buff, 5);
+		}else{
+			if (HAL_ADC_Start_DMA(&hadc, (uint32_t*) ADC1ConvertedValues,
+					ADC_BUFFER) != HAL_OK) {
+						return 0;
+				}
+			adcDataReady = 0;
+		}
 	}
 	/* USER CODE END 3 */
 
@@ -409,7 +404,7 @@ static void MX_ADC_Init(void) {
 	 */
 	sConfig.Channel = ADC_CHANNEL_0;
 	sConfig.Rank = ADC_RANK_CHANNEL_NUMBER;
-	sConfig.SamplingTime = ADC_SAMPLETIME_28CYCLES_5;
+	sConfig.SamplingTime = ADC_SAMPLETIME_239CYCLES_5;
 	if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK) {
 		_Error_Handler(__FILE__, __LINE__);
 	}
@@ -499,16 +494,17 @@ static void MX_GPIO_Init(void) {
 /* USER CODE BEGIN 4 */
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* AdcHandle) {
 
-	yoke1 = 0;
-	yoke2 = 0;
+	//yoke1 = 0;
+	//yoke2 = 0;
 	for (int i = 0; i < ADC_BUFFER / 2; i++) {
 		yoke1 += ADC1ConvertedValues[i] >> 16;
 		yoke2 += ADC1ConvertedValues[i] & 0xFFFF;
 	}
 
-	yoke1 = yoke1 / (ADC_BUFFER / 2);
-	yoke2 = yoke2 / (ADC_BUFFER / 2);
+	yoke1 = yoke1 / ((ADC_BUFFER / 2) + 1);
+	yoke2 = yoke2 / ((ADC_BUFFER / 2) + 1);
 	HAL_ADC_Stop_DMA(&hadc);
+	adcDataReady = 1;
 
 }
 
