@@ -48,6 +48,7 @@ clean:
 
 post-build:
 	-@echo 'Generating binary and Printing size information:'
+	arm-none-eabi-objcopy -O ihex "Atari_Yoke.elf" "Atari_Yoke.hex"
 	arm-none-eabi-objcopy -O binary "Atari_Yoke.elf" "Atari_Yoke.bin"
 	arm-none-eabi-size "Atari_Yoke.elf"
 	-@echo ' '

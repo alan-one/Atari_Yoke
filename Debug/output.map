@@ -2,8 +2,34 @@ Archive member included to satisfy reference by file (symbol)
 
 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
                               Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o (__aeabi_uidiv)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+                              Src/main.o (__aeabi_idiv)
 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
                               /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_fixunsdfsi.o)
+                              Src/main.o (__aeabi_d2uiz)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(adddf3.o)
+                              Src/main.o (__aeabi_dadd)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(muldf3.o)
+                              Src/main.o (__aeabi_dmul)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(subdf3.o)
+                              /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_fixunsdfsi.o) (__aeabi_dsub)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
+                              /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_fixunsdfsi.o) (__aeabi_d2iz)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
+                              Src/main.o (__aeabi_i2d)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatunsidf.o)
+                              Src/main.o (__aeabi_ui2d)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_arm_cmpdf2.o)
+                              /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_fixunsdfsi.o) (__aeabi_dcmpge)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+                              /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(adddf3.o) (__clzsi2)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
+                              /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_arm_cmpdf2.o) (__eqdf2)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(gedf2.o)
+                              /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_arm_cmpdf2.o) (__gedf2)
+/Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(ledf2.o)
+                              /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_arm_cmpdf2.o) (__ledf2)
 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
                               /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/crt0.o (exit)
 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-impure.o)
@@ -20,15 +46,17 @@ Common symbol       size              file
 
 hUsbDeviceFS        0x224             Src/usb_device.o
 adcData1            0x4               Src/main.o
+buff                0x5               Src/main.o
 uwTick              0x4               Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
 pFlash              0x20              Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o
+bounds              0x10              Src/main.o
 adcData2            0x4               Src/main.o
 hdma_adc            0x44              Src/main.o
 hpcd_USB_FS         0x220             Src/usbd_conf.o
 hadc                0x4c              Src/main.o
 USBD_StrDesc        0x200             Src/usbd_desc.o
 ADC1ConvertedValues
-                    0x28              Src/main.o
+                    0x14              Src/main.o
 
 Discarded input sections
 
@@ -195,6 +223,10 @@ Discarded input sections
  .text          0x0000000000000000        0x0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .data          0x0000000000000000        0x0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .bss           0x0000000000000000        0x0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+ .text.ADC_ConversionStop
+                0x0000000000000000       0x54 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+ .text.ADC_Disable
+                0x0000000000000000       0x8e Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .text.HAL_ADC_MspInit
                 0x0000000000000000        0x2 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .text.HAL_ADC_MspDeInit
@@ -213,6 +245,8 @@ Discarded input sections
                 0x0000000000000000       0x88 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .text.HAL_ADC_Stop_IT
                 0x0000000000000000       0x50 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+ .text.HAL_ADC_Stop_DMA
+                0x0000000000000000       0x7c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .text.HAL_ADC_GetValue
                 0x0000000000000000        0x6 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .text.HAL_ADC_ConvCpltCallback
@@ -615,6 +649,8 @@ Discarded input sections
                 0x0000000000000000       0x40 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
  .text.HAL_DMA_Start
                 0x0000000000000000       0x4e Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
+ .text.HAL_DMA_Abort
+                0x0000000000000000       0x2e Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
  .text.HAL_DMA_Abort_IT
                 0x0000000000000000       0x4a Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
  .text.HAL_DMA_PollForTransfer
@@ -1074,8 +1110,6 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
  .text.HAL_GPIO_DeInit
                 0x0000000000000000       0xf8 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
- .text.HAL_GPIO_TogglePin
-                0x0000000000000000        0x8 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
  .text.HAL_GPIO_LockPin
                 0x0000000000000000       0x2c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
  .text.HAL_GPIO_EXTI_Callback
@@ -4103,8 +4137,34 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 startup/startup_stm32f070x6.o
  .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
  .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
  .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_fixunsdfsi.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_fixunsdfsi.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(adddf3.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(adddf3.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(muldf3.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(muldf3.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(subdf3.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(subdf3.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatunsidf.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatunsidf.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_arm_cmpdf2.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_arm_cmpdf2.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(gedf2.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(gedf2.o)
+ .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(ledf2.o)
+ .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(ledf2.o)
  .text          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
  .data          0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
  .bss           0x0000000000000000        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-exit.o)
@@ -4221,7 +4281,7 @@ LOAD /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.maco
                 0x0000000008000000                g_pfnVectors
                 0x00000000080000c0                . = ALIGN (0x4)
 
-.text           0x00000000080000c0     0x3cb8
+.text           0x00000000080000c0     0x5344
                 0x00000000080000c0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080000c0       0x60 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
@@ -4229,514 +4289,550 @@ LOAD /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.maco
                 0x0000000008000120                __udivsi3
                 0x0000000008000120                __aeabi_uidiv
                 0x000000000800022c                __aeabi_uidivmod
- .text          0x0000000008000234        0x4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
-                0x0000000008000234                __aeabi_ldiv0
-                0x0000000008000234                __aeabi_idiv0
+ .text          0x0000000008000234      0x1d4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+                0x0000000008000234                __aeabi_idiv
+                0x0000000008000234                __divsi3
+                0x0000000008000400                __aeabi_idivmod
+ .text          0x0000000008000408        0x4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+                0x0000000008000408                __aeabi_ldiv0
+                0x0000000008000408                __aeabi_idiv0
+ .text          0x000000000800040c       0x3c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_fixunsdfsi.o)
+                0x000000000800040c                __fixunsdfsi
+                0x000000000800040c                __aeabi_d2uiz
+ .text          0x0000000008000448      0x620 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(adddf3.o)
+                0x0000000008000448                __aeabi_dadd
+ .text          0x0000000008000a68      0x500 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(muldf3.o)
+                0x0000000008000a68                __aeabi_dmul
+ .text          0x0000000008000f68      0x62c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(subdf3.o)
+                0x0000000008000f68                __aeabi_dsub
+ .text          0x0000000008001594       0x68 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
+                0x0000000008001594                __aeabi_d2iz
+ .text          0x00000000080015fc       0x84 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
+                0x00000000080015fc                __aeabi_i2d
+ .text          0x0000000008001680       0x70 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatunsidf.o)
+                0x0000000008001680                __aeabi_ui2d
+ .text          0x00000000080016f0       0x7c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_arm_cmpdf2.o)
+                0x00000000080016f0                __aeabi_cdrcmple
+                0x0000000008001700                __aeabi_cdcmple
+                0x0000000008001700                __aeabi_cdcmpeq
+                0x0000000008001710                __aeabi_dcmpeq
+                0x000000000800171c                __aeabi_dcmplt
+                0x0000000008001730                __aeabi_dcmple
+                0x0000000008001744                __aeabi_dcmpgt
+                0x0000000008001758                __aeabi_dcmpge
+ .text          0x000000000800176c       0x3c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+                0x000000000800176c                __clzsi2
+ .text          0x00000000080017a8       0x74 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
+                0x00000000080017a8                __eqdf2
+                0x00000000080017a8                __nedf2
+ .text          0x000000000800181c       0xc8 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(gedf2.o)
+                0x000000000800181c                __gtdf2
+                0x000000000800181c                __gedf2
+ .text          0x00000000080018e4       0xc4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(ledf2.o)
+                0x00000000080018e4                __ltdf2
+                0x00000000080018e4                __ledf2
  *(.text*)
  .text.HAL_InitTick
-                0x0000000008000238       0x24 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
-                0x0000000008000238                HAL_InitTick
+                0x00000000080019a8       0x24 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
+                0x00000000080019a8                HAL_InitTick
  .text.HAL_Init
-                0x000000000800025c       0x20 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
-                0x000000000800025c                HAL_Init
+                0x00000000080019cc       0x20 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
+                0x00000000080019cc                HAL_Init
  .text.HAL_IncTick
-                0x000000000800027c       0x10 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
-                0x000000000800027c                HAL_IncTick
+                0x00000000080019ec       0x10 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
+                0x00000000080019ec                HAL_IncTick
  .text.HAL_GetTick
-                0x000000000800028c        0xc Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
-                0x000000000800028c                HAL_GetTick
+                0x00000000080019fc        0xc Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
+                0x00000000080019fc                HAL_GetTick
  .text.HAL_Delay
-                0x0000000008000298       0x22 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
-                0x0000000008000298                HAL_Delay
- .text.ADC_ConversionStop
-                0x00000000080002ba       0x54 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
- .text.ADC_Disable
-                0x000000000800030e       0x8e Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+                0x0000000008001a08       0x22 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
+                0x0000000008001a08                HAL_Delay
+ *fill*         0x0000000008001a2a        0x2 
  .text.ADC_Enable
-                0x000000000800039c       0xb4 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+                0x0000000008001a2c       0xb4 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .text.HAL_ADC_Init
-                0x0000000008000450      0x18c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
-                0x0000000008000450                HAL_ADC_Init
+                0x0000000008001ae0      0x18c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+                0x0000000008001ae0                HAL_ADC_Init
  .text.HAL_ADC_Start_DMA
-                0x00000000080005dc       0xa8 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
-                0x00000000080005dc                HAL_ADC_Start_DMA
- .text.HAL_ADC_Stop_DMA
-                0x0000000008000684       0x7c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
-                0x0000000008000684                HAL_ADC_Stop_DMA
+                0x0000000008001c6c       0xa8 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+                0x0000000008001c6c                HAL_ADC_Start_DMA
  .text.ADC_DMAConvCplt
-                0x0000000008000700       0x70 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+                0x0000000008001d14       0x70 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .text.HAL_ADC_ConvHalfCpltCallback
-                0x0000000008000770        0x2 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
-                0x0000000008000770                HAL_ADC_ConvHalfCpltCallback
+                0x0000000008001d84        0x2 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+                0x0000000008001d84                HAL_ADC_ConvHalfCpltCallback
  .text.ADC_DMAHalfConvCplt
-                0x0000000008000772        0xa Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+                0x0000000008001d86        0xa Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .text.HAL_ADC_ErrorCallback
-                0x000000000800077c        0x2 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
-                0x000000000800077c                HAL_ADC_ErrorCallback
+                0x0000000008001d90        0x2 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+                0x0000000008001d90                HAL_ADC_ErrorCallback
  .text.ADC_DMAError
-                0x000000000800077e       0x1a Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+                0x0000000008001d92       0x1a Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .text.HAL_ADC_ConfigChannel
-                0x0000000008000798      0x134 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
-                0x0000000008000798                HAL_ADC_ConfigChannel
+                0x0000000008001dac      0x134 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
+                0x0000000008001dac                HAL_ADC_ConfigChannel
  .text.HAL_NVIC_SetPriority
-                0x00000000080008cc       0x64 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
-                0x00000000080008cc                HAL_NVIC_SetPriority
+                0x0000000008001ee0       0x64 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
+                0x0000000008001ee0                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x0000000008000930       0x14 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
-                0x0000000008000930                HAL_NVIC_EnableIRQ
+                0x0000000008001f44       0x14 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
+                0x0000000008001f44                HAL_NVIC_EnableIRQ
  .text.HAL_SYSTICK_Config
-                0x0000000008000944       0x38 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
-                0x0000000008000944                HAL_SYSTICK_Config
+                0x0000000008001f58       0x38 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
+                0x0000000008001f58                HAL_SYSTICK_Config
  .text.HAL_SYSTICK_CLKSourceConfig
-                0x000000000800097c       0x20 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
-                0x000000000800097c                HAL_SYSTICK_CLKSourceConfig
+                0x0000000008001f90       0x20 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
+                0x0000000008001f90                HAL_SYSTICK_CLKSourceConfig
  .text.HAL_SYSTICK_Callback
-                0x000000000800099c        0x2 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
-                0x000000000800099c                HAL_SYSTICK_Callback
+                0x0000000008001fb0        0x2 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
+                0x0000000008001fb0                HAL_SYSTICK_Callback
  .text.HAL_SYSTICK_IRQHandler
-                0x000000000800099e        0x8 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
-                0x000000000800099e                HAL_SYSTICK_IRQHandler
+                0x0000000008001fb2        0x8 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
+                0x0000000008001fb2                HAL_SYSTICK_IRQHandler
  .text.DMA_SetConfig
-                0x00000000080009a6       0x2a Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
+                0x0000000008001fba       0x2a Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
  .text.DMA_CalcBaseAndBitshift
-                0x00000000080009d0       0x28 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
+                0x0000000008001fe4       0x28 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
  .text.HAL_DMA_Init
-                0x00000000080009f8       0x58 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
-                0x00000000080009f8                HAL_DMA_Init
+                0x000000000800200c       0x58 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
+                0x000000000800200c                HAL_DMA_Init
  .text.HAL_DMA_Start_IT
-                0x0000000008000a50       0x76 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
-                0x0000000008000a50                HAL_DMA_Start_IT
- .text.HAL_DMA_Abort
-                0x0000000008000ac6       0x2e Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
-                0x0000000008000ac6                HAL_DMA_Abort
+                0x0000000008002064       0x76 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
+                0x0000000008002064                HAL_DMA_Start_IT
  .text.HAL_DMA_IRQHandler
-                0x0000000008000af4       0xaa Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
-                0x0000000008000af4                HAL_DMA_IRQHandler
- *fill*         0x0000000008000b9e        0x2 
+                0x00000000080020da       0xaa Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o
+                0x00000000080020da                HAL_DMA_IRQHandler
  .text.HAL_GPIO_Init
-                0x0000000008000ba0      0x18c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
-                0x0000000008000ba0                HAL_GPIO_Init
+                0x0000000008002184      0x18c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
+                0x0000000008002184                HAL_GPIO_Init
  .text.HAL_GPIO_ReadPin
-                0x0000000008000d2c        0xe Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
-                0x0000000008000d2c                HAL_GPIO_ReadPin
+                0x0000000008002310        0xe Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
+                0x0000000008002310                HAL_GPIO_ReadPin
  .text.HAL_GPIO_WritePin
-                0x0000000008000d3a        0xc Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
-                0x0000000008000d3a                HAL_GPIO_WritePin
- *fill*         0x0000000008000d46        0x2 
+                0x000000000800231e        0xc Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
+                0x000000000800231e                HAL_GPIO_WritePin
+ .text.HAL_GPIO_TogglePin
+                0x000000000800232a        0x8 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
+                0x000000000800232a                HAL_GPIO_TogglePin
+ *fill*         0x0000000008002332        0x2 
  .text.HAL_PCD_Init
-                0x0000000008000d48       0xc0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x0000000008000d48                HAL_PCD_Init
+                0x0000000008002334       0xc0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x0000000008002334                HAL_PCD_Init
  .text.HAL_PCD_Start
-                0x0000000008000e08       0x18 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x0000000008000e08                HAL_PCD_Start
+                0x00000000080023f4       0x18 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x00000000080023f4                HAL_PCD_Start
  .text.HAL_PCD_SetAddress
-                0x0000000008000e20       0x36 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x0000000008000e20                HAL_PCD_SetAddress
- *fill*         0x0000000008000e56        0x2 
+                0x000000000800240c       0x36 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x000000000800240c                HAL_PCD_SetAddress
+ *fill*         0x0000000008002442        0x2 
  .text.HAL_PCD_EP_Open
-                0x0000000008000e58      0x354 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x0000000008000e58                HAL_PCD_EP_Open
+                0x0000000008002444      0x354 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x0000000008002444                HAL_PCD_EP_Open
  .text.HAL_PCD_EP_Close
-                0x00000000080011ac      0x1d0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x00000000080011ac                HAL_PCD_EP_Close
+                0x0000000008002798      0x1d0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x0000000008002798                HAL_PCD_EP_Close
  .text.HAL_PCD_EP_Receive
-                0x000000000800137c      0x23c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x000000000800137c                HAL_PCD_EP_Receive
+                0x0000000008002968      0x23c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x0000000008002968                HAL_PCD_EP_Receive
  .text.HAL_PCD_EP_SetStall
-                0x00000000080015b8       0xc4 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x00000000080015b8                HAL_PCD_EP_SetStall
+                0x0000000008002ba4       0xc4 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x0000000008002ba4                HAL_PCD_EP_SetStall
  .text.HAL_PCD_EP_ClrStall
-                0x000000000800167c       0xe0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x000000000800167c                HAL_PCD_EP_ClrStall
+                0x0000000008002c68       0xe0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x0000000008002c68                HAL_PCD_EP_ClrStall
  .text.PCD_WritePMA
-                0x000000000800175c       0x26 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x000000000800175c                PCD_WritePMA
- *fill*         0x0000000008001782        0x2 
+                0x0000000008002d48       0x26 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x0000000008002d48                PCD_WritePMA
+ *fill*         0x0000000008002d6e        0x2 
  .text.HAL_PCD_EP_Transmit
-                0x0000000008001784      0x24c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x0000000008001784                HAL_PCD_EP_Transmit
+                0x0000000008002d70      0x24c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x0000000008002d70                HAL_PCD_EP_Transmit
  .text.PCD_ReadPMA
-                0x00000000080019d0       0x2c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x00000000080019d0                PCD_ReadPMA
+                0x0000000008002fbc       0x2c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x0000000008002fbc                PCD_ReadPMA
  .text.PCD_EP_ISR_Handler
-                0x00000000080019fc      0x4bc Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x0000000008002fe8      0x4bc Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
  .text.HAL_PCD_IRQHandler
-                0x0000000008001eb8      0x120 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
-                0x0000000008001eb8                HAL_PCD_IRQHandler
+                0x00000000080034a4      0x120 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd.o
+                0x00000000080034a4                HAL_PCD_IRQHandler
  .text.HAL_PCDEx_PMAConfig
-                0x0000000008001fd8       0x3a Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.o
-                0x0000000008001fd8                HAL_PCDEx_PMAConfig
- *fill*         0x0000000008002012        0x2 
+                0x00000000080035c4       0x3a Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pcd_ex.o
+                0x00000000080035c4                HAL_PCDEx_PMAConfig
+ *fill*         0x00000000080035fe        0x2 
  .text.HAL_RCC_OscConfig
-                0x0000000008002014      0x460 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
-                0x0000000008002014                HAL_RCC_OscConfig
+                0x0000000008003600      0x460 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
+                0x0000000008003600                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x0000000008002474       0x80 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
-                0x0000000008002474                HAL_RCC_GetSysClockFreq
+                0x0000000008003a60       0x80 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
+                0x0000000008003a60                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x00000000080024f4      0x154 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
-                0x00000000080024f4                HAL_RCC_ClockConfig
+                0x0000000008003ae0      0x154 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
+                0x0000000008003ae0                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x0000000008002648        0xc Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
-                0x0000000008002648                HAL_RCC_GetHCLKFreq
+                0x0000000008003c34        0xc Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
+                0x0000000008003c34                HAL_RCC_GetHCLKFreq
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x0000000008002654      0x12c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o
-                0x0000000008002654                HAL_RCCEx_PeriphCLKConfig
+                0x0000000008003c40      0x12c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o
+                0x0000000008003c40                HAL_RCCEx_PeriphCLKConfig
  .text.USBD_HID_GetCfgDesc
-                0x0000000008002780        0xc Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
+                0x0000000008003d6c        0xc Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
  .text.USBD_HID_DataIn
-                0x000000000800278c        0xe Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
- *fill*         0x000000000800279a        0x2 
+                0x0000000008003d78        0xe Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
+ *fill*         0x0000000008003d86        0x2 
  .text.USBD_HID_GetDeviceQualifierDesc
-                0x000000000800279c       0x10 Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
+                0x0000000008003d88       0x10 Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
  .text.USBD_HID_Setup
-                0x00000000080027ac       0xc8 Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
+                0x0000000008003d98       0xc8 Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
  .text.USBD_HID_DeInit
-                0x0000000008002874       0x24 Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
+                0x0000000008003e60       0x24 Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
  .text.USBD_HID_Init
-                0x0000000008002898       0x2a Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
+                0x0000000008003e84       0x2a Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
  .text.USBD_HID_SendReport
-                0x00000000080028c2       0x2a Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
-                0x00000000080028c2                USBD_HID_SendReport
+                0x0000000008003eae       0x2a Middlewares/ST/STM32_USB_Device_Library/Class/HID/Src/usbd_hid.o
+                0x0000000008003eae                USBD_HID_SendReport
  .text.USBD_Init
-                0x00000000080028ec       0x38 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x00000000080028ec                USBD_Init
+                0x0000000008003ed8       0x38 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x0000000008003ed8                USBD_Init
  .text.USBD_RegisterClass
-                0x0000000008002924       0x12 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x0000000008002924                USBD_RegisterClass
+                0x0000000008003f10       0x12 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x0000000008003f10                USBD_RegisterClass
  .text.USBD_Start
-                0x0000000008002936        0xa Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x0000000008002936                USBD_Start
+                0x0000000008003f22        0xa Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x0000000008003f22                USBD_Start
  .text.USBD_SetClassConfig
-                0x0000000008002940       0x20 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x0000000008002940                USBD_SetClassConfig
+                0x0000000008003f2c       0x20 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x0000000008003f2c                USBD_SetClassConfig
  .text.USBD_ClrClassConfig
-                0x0000000008002960       0x10 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x0000000008002960                USBD_ClrClassConfig
+                0x0000000008003f4c       0x10 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x0000000008003f4c                USBD_ClrClassConfig
  .text.USBD_LL_SetupStage
-                0x0000000008002970       0x68 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x0000000008002970                USBD_LL_SetupStage
+                0x0000000008003f5c       0x68 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x0000000008003f5c                USBD_LL_SetupStage
  .text.USBD_LL_DataOutStage
-                0x00000000080029d8       0x7a Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x00000000080029d8                USBD_LL_DataOutStage
+                0x0000000008003fc4       0x7a Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x0000000008003fc4                USBD_LL_DataOutStage
  .text.USBD_LL_DataInStage
-                0x0000000008002a52       0xc4 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x0000000008002a52                USBD_LL_DataInStage
+                0x000000000800403e       0xc4 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x000000000800403e                USBD_LL_DataInStage
  .text.USBD_LL_Reset
-                0x0000000008002b16       0x46 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x0000000008002b16                USBD_LL_Reset
+                0x0000000008004102       0x46 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x0000000008004102                USBD_LL_Reset
  .text.USBD_LL_SetSpeed
-                0x0000000008002b5c        0x6 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x0000000008002b5c                USBD_LL_SetSpeed
+                0x0000000008004148        0x6 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x0000000008004148                USBD_LL_SetSpeed
  .text.USBD_LL_Suspend
-                0x0000000008002b62       0x16 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x0000000008002b62                USBD_LL_Suspend
+                0x000000000800414e       0x16 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x000000000800414e                USBD_LL_Suspend
  .text.USBD_LL_Resume
-                0x0000000008002b78        0xe Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x0000000008002b78                USBD_LL_Resume
+                0x0000000008004164        0xe Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x0000000008004164                USBD_LL_Resume
  .text.USBD_LL_SOF
-                0x0000000008002b86       0x20 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
-                0x0000000008002b86                USBD_LL_SOF
+                0x0000000008004172       0x20 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
+                0x0000000008004172                USBD_LL_SOF
  .text.USBD_GetLen
-                0x0000000008002ba6       0x14 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x0000000008004192       0x14 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .text.USBD_SetFeature
-                0x0000000008002bba       0x24 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x00000000080041a6       0x24 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .text.USBD_ParseSetupRequest
-                0x0000000008002bde       0x28 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
-                0x0000000008002bde                USBD_ParseSetupRequest
+                0x00000000080041ca       0x28 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x00000000080041ca                USBD_ParseSetupRequest
  .text.USBD_CtlError
-                0x0000000008002c06       0x14 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
-                0x0000000008002c06                USBD_CtlError
- *fill*         0x0000000008002c1a        0x2 
+                0x00000000080041f2       0x14 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x00000000080041f2                USBD_CtlError
+ *fill*         0x0000000008004206        0x2 
  .text.USBD_GetDescriptor
-                0x0000000008002c1c      0x15c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x0000000008004208      0x15c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .text.USBD_SetAddress
-                0x0000000008002d78       0x58 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x0000000008004364       0x58 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .text.USBD_SetConfig
-                0x0000000008002dd0       0xb0 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x00000000080043bc       0xb0 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .text.USBD_GetConfig
-                0x0000000008002e80       0x3c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x000000000800446c       0x3c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .text.USBD_GetStatus
-                0x0000000008002ebc       0x34 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x00000000080044a8       0x34 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .text.USBD_ClrFeature
-                0x0000000008002ef0       0x38 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x00000000080044dc       0x38 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .text.USBD_StdDevReq
-                0x0000000008002f28       0x48 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
-                0x0000000008002f28                USBD_StdDevReq
+                0x0000000008004514       0x48 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x0000000008004514                USBD_StdDevReq
  .text.USBD_StdItfReq
-                0x0000000008002f70       0x3c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
-                0x0000000008002f70                USBD_StdItfReq
+                0x000000000800455c       0x3c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x000000000800455c                USBD_StdItfReq
  .text.USBD_StdEPReq
-                0x0000000008002fac      0x138 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
-                0x0000000008002fac                USBD_StdEPReq
+                0x0000000008004598      0x138 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x0000000008004598                USBD_StdEPReq
  .text.USBD_GetString
-                0x00000000080030e4       0x3c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
-                0x00000000080030e4                USBD_GetString
+                0x00000000080046d0       0x3c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+                0x00000000080046d0                USBD_GetString
  .text.USBD_CtlSendData
-                0x0000000008003120       0x1c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
-                0x0000000008003120                USBD_CtlSendData
+                0x000000000800470c       0x1c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
+                0x000000000800470c                USBD_CtlSendData
  .text.USBD_CtlContinueSendData
-                0x000000000800313c       0x10 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
-                0x000000000800313c                USBD_CtlContinueSendData
+                0x0000000008004728       0x10 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
+                0x0000000008004728                USBD_CtlContinueSendData
  .text.USBD_CtlContinueRx
-                0x000000000800314c       0x10 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
-                0x000000000800314c                USBD_CtlContinueRx
+                0x0000000008004738       0x10 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
+                0x0000000008004738                USBD_CtlContinueRx
  .text.USBD_CtlSendStatus
-                0x000000000800315c       0x18 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
-                0x000000000800315c                USBD_CtlSendStatus
+                0x0000000008004748       0x18 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
+                0x0000000008004748                USBD_CtlSendStatus
  .text.USBD_CtlReceiveStatus
-                0x0000000008003174       0x18 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
-                0x0000000008003174                USBD_CtlReceiveStatus
+                0x0000000008004760       0x18 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
+                0x0000000008004760                USBD_CtlReceiveStatus
  .text.MX_GPIO_Init
-                0x000000000800318c       0xa4 Src/main.o
+                0x0000000008004778       0xa4 Src/main.o
  .text.MX_DMA_Init
-                0x0000000008003230       0x30 Src/main.o
+                0x000000000800481c       0x30 Src/main.o
+ .text.map      0x000000000800484c       0x16 Src/main.o
+                0x000000000800484c                map
+ *fill*         0x0000000008004862        0x2 
  .text.HAL_ADC_ConvCpltCallback
-                0x0000000008003260       0x54 Src/main.o
-                0x0000000008003260                HAL_ADC_ConvCpltCallback
+                0x0000000008004864       0xcc Src/main.o
+                0x0000000008004864                HAL_ADC_ConvCpltCallback
  .text._Error_Handler
-                0x00000000080032b4        0x2 Src/main.o
-                0x00000000080032b4                _Error_Handler
- *fill*         0x00000000080032b6        0x2 
+                0x0000000008004930        0x2 Src/main.o
+                0x0000000008004930                _Error_Handler
+ *fill*         0x0000000008004932        0x2 
  .text.MX_ADC_Init
-                0x00000000080032b8       0x90 Src/main.o
+                0x0000000008004934       0x90 Src/main.o
  .text.SystemClock_Config
-                0x0000000008003348       0xa8 Src/main.o
-                0x0000000008003348                SystemClock_Config
- .text.main     0x00000000080033f0      0x37c Src/main.o
-                0x00000000080033f0                main
+                0x00000000080049c4       0xa8 Src/main.o
+                0x00000000080049c4                SystemClock_Config
+ .text.main     0x0000000008004a6c      0x378 Src/main.o
+                0x0000000008004a6c                main
  .text.HAL_MspInit
-                0x000000000800376c       0x44 Src/stm32f0xx_hal_msp.o
-                0x000000000800376c                HAL_MspInit
+                0x0000000008004de4       0x44 Src/stm32f0xx_hal_msp.o
+                0x0000000008004de4                HAL_MspInit
  .text.HAL_ADC_MspInit
-                0x00000000080037b0       0x88 Src/stm32f0xx_hal_msp.o
-                0x00000000080037b0                HAL_ADC_MspInit
+                0x0000000008004e28       0x8c Src/stm32f0xx_hal_msp.o
+                0x0000000008004e28                HAL_ADC_MspInit
  .text.NMI_Handler
-                0x0000000008003838        0x2 Src/stm32f0xx_it.o
-                0x0000000008003838                NMI_Handler
+                0x0000000008004eb4        0x2 Src/stm32f0xx_it.o
+                0x0000000008004eb4                NMI_Handler
  .text.HardFault_Handler
-                0x000000000800383a        0x2 Src/stm32f0xx_it.o
-                0x000000000800383a                HardFault_Handler
+                0x0000000008004eb6        0x2 Src/stm32f0xx_it.o
+                0x0000000008004eb6                HardFault_Handler
  .text.SVC_Handler
-                0x000000000800383c        0x2 Src/stm32f0xx_it.o
-                0x000000000800383c                SVC_Handler
+                0x0000000008004eb8        0x2 Src/stm32f0xx_it.o
+                0x0000000008004eb8                SVC_Handler
  .text.PendSV_Handler
-                0x000000000800383e        0x2 Src/stm32f0xx_it.o
-                0x000000000800383e                PendSV_Handler
+                0x0000000008004eba        0x2 Src/stm32f0xx_it.o
+                0x0000000008004eba                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008003840        0xc Src/stm32f0xx_it.o
-                0x0000000008003840                SysTick_Handler
+                0x0000000008004ebc        0xc Src/stm32f0xx_it.o
+                0x0000000008004ebc                SysTick_Handler
  .text.DMA1_Channel1_IRQHandler
-                0x000000000800384c       0x10 Src/stm32f0xx_it.o
-                0x000000000800384c                DMA1_Channel1_IRQHandler
+                0x0000000008004ec8       0x10 Src/stm32f0xx_it.o
+                0x0000000008004ec8                DMA1_Channel1_IRQHandler
  .text.USB_IRQHandler
-                0x000000000800385c       0x10 Src/stm32f0xx_it.o
-                0x000000000800385c                USB_IRQHandler
+                0x0000000008004ed8       0x10 Src/stm32f0xx_it.o
+                0x0000000008004ed8                USB_IRQHandler
  .text.SystemInit
-                0x000000000800386c       0x68 Src/system_stm32f0xx.o
-                0x000000000800386c                SystemInit
+                0x0000000008004ee8       0x68 Src/system_stm32f0xx.o
+                0x0000000008004ee8                SystemInit
  .text.MX_USB_DEVICE_Init
-                0x00000000080038d4       0x2c Src/usb_device.o
-                0x00000000080038d4                MX_USB_DEVICE_Init
+                0x0000000008004f50       0x2c Src/usb_device.o
+                0x0000000008004f50                MX_USB_DEVICE_Init
  .text.SystemClockConfig_Resume
-                0x0000000008003900        0x8 Src/usbd_conf.o
+                0x0000000008004f7c        0x8 Src/usbd_conf.o
  .text.HAL_PCD_MspInit
-                0x0000000008003908       0x40 Src/usbd_conf.o
-                0x0000000008003908                HAL_PCD_MspInit
+                0x0000000008004f84       0x40 Src/usbd_conf.o
+                0x0000000008004f84                HAL_PCD_MspInit
  .text.HAL_PCD_SetupStageCallback
-                0x0000000008003948       0x14 Src/usbd_conf.o
-                0x0000000008003948                HAL_PCD_SetupStageCallback
+                0x0000000008004fc4       0x14 Src/usbd_conf.o
+                0x0000000008004fc4                HAL_PCD_SetupStageCallback
  .text.HAL_PCD_DataOutStageCallback
-                0x000000000800395c       0x1e Src/usbd_conf.o
-                0x000000000800395c                HAL_PCD_DataOutStageCallback
+                0x0000000008004fd8       0x1e Src/usbd_conf.o
+                0x0000000008004fd8                HAL_PCD_DataOutStageCallback
  .text.HAL_PCD_DataInStageCallback
-                0x000000000800397a       0x1a Src/usbd_conf.o
-                0x000000000800397a                HAL_PCD_DataInStageCallback
+                0x0000000008004ff6       0x1a Src/usbd_conf.o
+                0x0000000008004ff6                HAL_PCD_DataInStageCallback
  .text.HAL_PCD_SOFCallback
-                0x0000000008003994        0xe Src/usbd_conf.o
-                0x0000000008003994                HAL_PCD_SOFCallback
+                0x0000000008005010        0xe Src/usbd_conf.o
+                0x0000000008005010                HAL_PCD_SOFCallback
  .text.HAL_PCD_ResetCallback
-                0x00000000080039a2       0x18 Src/usbd_conf.o
-                0x00000000080039a2                HAL_PCD_ResetCallback
- *fill*         0x00000000080039ba        0x2 
+                0x000000000800501e       0x18 Src/usbd_conf.o
+                0x000000000800501e                HAL_PCD_ResetCallback
+ *fill*         0x0000000008005036        0x2 
  .text.HAL_PCD_SuspendCallback
-                0x00000000080039bc       0x24 Src/usbd_conf.o
-                0x00000000080039bc                HAL_PCD_SuspendCallback
+                0x0000000008005038       0x24 Src/usbd_conf.o
+                0x0000000008005038                HAL_PCD_SuspendCallback
  .text.HAL_PCD_ResumeCallback
-                0x00000000080039e0       0x2c Src/usbd_conf.o
-                0x00000000080039e0                HAL_PCD_ResumeCallback
+                0x000000000800505c       0x2c Src/usbd_conf.o
+                0x000000000800505c                HAL_PCD_ResumeCallback
  .text.USBD_LL_Init
-                0x0000000008003a0c       0x78 Src/usbd_conf.o
-                0x0000000008003a0c                USBD_LL_Init
+                0x0000000008005088       0x78 Src/usbd_conf.o
+                0x0000000008005088                USBD_LL_Init
  .text.USBD_LL_Start
-                0x0000000008003a84       0x20 Src/usbd_conf.o
-                0x0000000008003a84                USBD_LL_Start
+                0x0000000008005100       0x20 Src/usbd_conf.o
+                0x0000000008005100                USBD_LL_Start
  .text.USBD_LL_OpenEP
-                0x0000000008003aa4       0x26 Src/usbd_conf.o
-                0x0000000008003aa4                USBD_LL_OpenEP
+                0x0000000008005120       0x26 Src/usbd_conf.o
+                0x0000000008005120                USBD_LL_OpenEP
  .text.USBD_LL_CloseEP
-                0x0000000008003aca       0x20 Src/usbd_conf.o
-                0x0000000008003aca                USBD_LL_CloseEP
+                0x0000000008005146       0x20 Src/usbd_conf.o
+                0x0000000008005146                USBD_LL_CloseEP
  .text.USBD_LL_StallEP
-                0x0000000008003aea       0x20 Src/usbd_conf.o
-                0x0000000008003aea                USBD_LL_StallEP
+                0x0000000008005166       0x20 Src/usbd_conf.o
+                0x0000000008005166                USBD_LL_StallEP
  .text.USBD_LL_ClearStallEP
-                0x0000000008003b0a       0x20 Src/usbd_conf.o
-                0x0000000008003b0a                USBD_LL_ClearStallEP
+                0x0000000008005186       0x20 Src/usbd_conf.o
+                0x0000000008005186                USBD_LL_ClearStallEP
  .text.USBD_LL_IsStallEP
-                0x0000000008003b2a       0x34 Src/usbd_conf.o
-                0x0000000008003b2a                USBD_LL_IsStallEP
+                0x00000000080051a6       0x34 Src/usbd_conf.o
+                0x00000000080051a6                USBD_LL_IsStallEP
  .text.USBD_LL_SetUSBAddress
-                0x0000000008003b5e       0x20 Src/usbd_conf.o
-                0x0000000008003b5e                USBD_LL_SetUSBAddress
+                0x00000000080051da       0x20 Src/usbd_conf.o
+                0x00000000080051da                USBD_LL_SetUSBAddress
  .text.USBD_LL_Transmit
-                0x0000000008003b7e       0x20 Src/usbd_conf.o
-                0x0000000008003b7e                USBD_LL_Transmit
+                0x00000000080051fa       0x20 Src/usbd_conf.o
+                0x00000000080051fa                USBD_LL_Transmit
  .text.USBD_LL_PrepareReceive
-                0x0000000008003b9e       0x20 Src/usbd_conf.o
-                0x0000000008003b9e                USBD_LL_PrepareReceive
- *fill*         0x0000000008003bbe        0x2 
+                0x000000000800521a       0x20 Src/usbd_conf.o
+                0x000000000800521a                USBD_LL_PrepareReceive
+ *fill*         0x000000000800523a        0x2 
  .text.USBD_static_malloc
-                0x0000000008003bc0        0x8 Src/usbd_conf.o
-                0x0000000008003bc0                USBD_static_malloc
+                0x000000000800523c        0x8 Src/usbd_conf.o
+                0x000000000800523c                USBD_static_malloc
  .text.USBD_static_free
-                0x0000000008003bc8        0x2 Src/usbd_conf.o
-                0x0000000008003bc8                USBD_static_free
- *fill*         0x0000000008003bca        0x2 
+                0x0000000008005244        0x2 Src/usbd_conf.o
+                0x0000000008005244                USBD_static_free
+ *fill*         0x0000000008005246        0x2 
  .text.USBD_FS_DeviceDescriptor
-                0x0000000008003bcc        0xc Src/usbd_desc.o
-                0x0000000008003bcc                USBD_FS_DeviceDescriptor
+                0x0000000008005248        0xc Src/usbd_desc.o
+                0x0000000008005248                USBD_FS_DeviceDescriptor
  .text.USBD_FS_LangIDStrDescriptor
-                0x0000000008003bd8       0x10 Src/usbd_desc.o
-                0x0000000008003bd8                USBD_FS_LangIDStrDescriptor
+                0x0000000008005254       0x10 Src/usbd_desc.o
+                0x0000000008005254                USBD_FS_LangIDStrDescriptor
  .text.USBD_FS_ProductStrDescriptor
-                0x0000000008003be8       0x28 Src/usbd_desc.o
-                0x0000000008003be8                USBD_FS_ProductStrDescriptor
+                0x0000000008005264       0x28 Src/usbd_desc.o
+                0x0000000008005264                USBD_FS_ProductStrDescriptor
  .text.USBD_FS_ManufacturerStrDescriptor
-                0x0000000008003c10       0x1c Src/usbd_desc.o
-                0x0000000008003c10                USBD_FS_ManufacturerStrDescriptor
+                0x000000000800528c       0x1c Src/usbd_desc.o
+                0x000000000800528c                USBD_FS_ManufacturerStrDescriptor
  .text.USBD_FS_SerialStrDescriptor
-                0x0000000008003c2c       0x28 Src/usbd_desc.o
-                0x0000000008003c2c                USBD_FS_SerialStrDescriptor
+                0x00000000080052a8       0x28 Src/usbd_desc.o
+                0x00000000080052a8                USBD_FS_SerialStrDescriptor
  .text.USBD_FS_ConfigStrDescriptor
-                0x0000000008003c54       0x28 Src/usbd_desc.o
-                0x0000000008003c54                USBD_FS_ConfigStrDescriptor
+                0x00000000080052d0       0x28 Src/usbd_desc.o
+                0x00000000080052d0                USBD_FS_ConfigStrDescriptor
  .text.USBD_FS_InterfaceStrDescriptor
-                0x0000000008003c7c       0x28 Src/usbd_desc.o
-                0x0000000008003c7c                USBD_FS_InterfaceStrDescriptor
+                0x00000000080052f8       0x28 Src/usbd_desc.o
+                0x00000000080052f8                USBD_FS_InterfaceStrDescriptor
  .text.Reset_Handler
-                0x0000000008003ca4       0x70 startup/startup_stm32f070x6.o
-                0x0000000008003ca4                Reset_Handler
+                0x0000000008005320       0x80 startup/startup_stm32f070x6.o
+                0x0000000008005320                Reset_Handler
  .text.Default_Handler
-                0x0000000008003d14        0x2 startup/startup_stm32f070x6.o
-                0x0000000008003d14                TIM1_BRK_UP_TRG_COM_IRQHandler
-                0x0000000008003d14                I2C1_IRQHandler
-                0x0000000008003d14                SPI1_IRQHandler
-                0x0000000008003d14                EXTI2_3_IRQHandler
-                0x0000000008003d14                ADC1_IRQHandler
-                0x0000000008003d14                TIM17_IRQHandler
-                0x0000000008003d14                RTC_IRQHandler
-                0x0000000008003d14                TIM16_IRQHandler
-                0x0000000008003d14                TIM3_IRQHandler
-                0x0000000008003d14                EXTI4_15_IRQHandler
-                0x0000000008003d14                RCC_IRQHandler
-                0x0000000008003d14                Default_Handler
-                0x0000000008003d14                TIM14_IRQHandler
-                0x0000000008003d14                DMA1_Channel4_5_IRQHandler
-                0x0000000008003d14                EXTI0_1_IRQHandler
-                0x0000000008003d14                WWDG_IRQHandler
-                0x0000000008003d14                DMA1_Channel2_3_IRQHandler
-                0x0000000008003d14                USART2_IRQHandler
-                0x0000000008003d14                FLASH_IRQHandler
-                0x0000000008003d14                USART1_IRQHandler
-                0x0000000008003d14                TIM1_CC_IRQHandler
- *fill*         0x0000000008003d16        0x2 
+                0x00000000080053a0        0x2 startup/startup_stm32f070x6.o
+                0x00000000080053a0                TIM1_BRK_UP_TRG_COM_IRQHandler
+                0x00000000080053a0                I2C1_IRQHandler
+                0x00000000080053a0                SPI1_IRQHandler
+                0x00000000080053a0                EXTI2_3_IRQHandler
+                0x00000000080053a0                ADC1_IRQHandler
+                0x00000000080053a0                TIM17_IRQHandler
+                0x00000000080053a0                RTC_IRQHandler
+                0x00000000080053a0                TIM16_IRQHandler
+                0x00000000080053a0                TIM3_IRQHandler
+                0x00000000080053a0                EXTI4_15_IRQHandler
+                0x00000000080053a0                RCC_IRQHandler
+                0x00000000080053a0                Default_Handler
+                0x00000000080053a0                TIM14_IRQHandler
+                0x00000000080053a0                DMA1_Channel4_5_IRQHandler
+                0x00000000080053a0                EXTI0_1_IRQHandler
+                0x00000000080053a0                WWDG_IRQHandler
+                0x00000000080053a0                DMA1_Channel2_3_IRQHandler
+                0x00000000080053a0                USART2_IRQHandler
+                0x00000000080053a0                FLASH_IRQHandler
+                0x00000000080053a0                USART1_IRQHandler
+                0x00000000080053a0                TIM1_CC_IRQHandler
+ *fill*         0x00000000080053a2        0x2 
  .text.__libc_init_array
-                0x0000000008003d18       0x48 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
-                0x0000000008003d18                __libc_init_array
+                0x00000000080053a4       0x48 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+                0x00000000080053a4                __libc_init_array
  *(.glue_7)
- .glue_7        0x0000000008003d60        0x0 linker stubs
+ .glue_7        0x00000000080053ec        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008003d60        0x0 linker stubs
+ .glue_7t       0x00000000080053ec        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008003d60        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+ .eh_frame      0x00000000080053ec        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
  *(.init)
- .init          0x0000000008003d60        0x4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x0000000008003d60                _init
- .init          0x0000000008003d64        0x8 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+ .init          0x00000000080053ec        0x4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x00000000080053ec                _init
+ .init          0x00000000080053f0        0x8 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
  *(.fini)
- .fini          0x0000000008003d6c        0x4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x0000000008003d6c                _fini
- .fini          0x0000000008003d70        0x8 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
-                0x0000000008003d78                . = ALIGN (0x4)
-                0x0000000008003d78                _etext = .
+ .fini          0x00000000080053f8        0x4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x00000000080053f8                _fini
+ .fini          0x00000000080053fc        0x8 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x0000000008005404                . = ALIGN (0x4)
+                0x0000000008005404                _etext = .
 
-.vfp11_veneer   0x0000000008003d78        0x0
- .vfp11_veneer  0x0000000008003d78        0x0 linker stubs
+.vfp11_veneer   0x0000000008005404        0x0
+ .vfp11_veneer  0x0000000008005404        0x0 linker stubs
 
-.v4_bx          0x0000000008003d78        0x0
- .v4_bx         0x0000000008003d78        0x0 linker stubs
+.v4_bx          0x0000000008005404        0x0
+ .v4_bx         0x0000000008005404        0x0 linker stubs
 
-.iplt           0x0000000008003d78        0x0
- .iplt          0x0000000008003d78        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.iplt           0x0000000008005404        0x0
+ .iplt          0x0000000008005404        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.rodata         0x0000000008003d78      0x13c
-                0x0000000008003d78                . = ALIGN (0x4)
+.rodata         0x0000000008005404      0x174
+                0x0000000008005404                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0000000008003d78       0x20 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
- .rodata        0x0000000008003d98       0x60 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
- .rodata        0x0000000008003df8       0x10 Src/main.o
-                0x0000000008003df8                ledArrayPins
- .rodata        0x0000000008003e08       0x18 Src/system_stm32f0xx.o
-                0x0000000008003e08                AHBPrescTable
-                0x0000000008003e18                APBPrescTable
+ .rodata        0x0000000008005404       0x20 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
+ .rodata        0x0000000008005424       0x60 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+ .rodata        0x0000000008005484       0x10 Src/main.o
+                0x0000000008005484                ledArrayPins
+ .rodata        0x0000000008005494       0x18 Src/system_stm32f0xx.o
+                0x0000000008005494                AHBPrescTable
+                0x00000000080054a4                APBPrescTable
+ .rodata        0x00000000080054ac       0x40 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(muldf3.o)
  *(.rodata*)
  .rodata.str1.4
-                0x0000000008003e20        0xe Src/main.o
- *fill*         0x0000000008003e2e        0x2 
+                0x00000000080054ec        0xe Src/main.o
+ *fill*         0x00000000080054fa        0x2 
  .rodata.str1.4
-                0x0000000008003e30       0x1b Src/stm32f0xx_hal_msp.o
- *fill*         0x0000000008003e4b        0x1 
+                0x00000000080054fc       0x1b Src/stm32f0xx_hal_msp.o
+ *fill*         0x0000000008005517        0x1 
  .rodata.str1.4
-                0x0000000008003e4c       0x13 Src/usbd_conf.o
- *fill*         0x0000000008003e5f        0x1 
+                0x0000000008005518       0x13 Src/usbd_conf.o
+ *fill*         0x000000000800552b        0x1 
  .rodata.str1.4
-                0x0000000008003e60       0x54 Src/usbd_desc.o
-                                         0x52 (size before relaxing)
-                0x0000000008003eb4                . = ALIGN (0x4)
+                0x000000000800552c       0x4c Src/usbd_desc.o
+                                         0x4b (size before relaxing)
+                0x0000000008005578                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008003eb4        0x0
- .rel.iplt      0x0000000008003eb4        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.rel.dyn        0x0000000008005578        0x0
+ .rel.iplt      0x0000000008005578        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0000000008003eb4        0x0
-                0x0000000008003eb4                __exidx_start = .
+.ARM            0x0000000008005578        0x0
+                0x0000000008005578                __exidx_start = .
  *(.ARM.exidx*)
-                0x0000000008003eb4                __exidx_end = .
+                0x0000000008005578                __exidx_end = .
 
-.preinit_array  0x0000000008003eb4        0x0
-                0x0000000008003eb4                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x0000000008005578        0x0
+                0x0000000008005578                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x0000000008003eb4                PROVIDE (__preinit_array_end, .)
+                0x0000000008005578                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x0000000008003eb4        0x4
-                0x0000000008003eb4                PROVIDE (__init_array_start, .)
+.init_array     0x0000000008005578        0x4
+                0x0000000008005578                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008003eb4        0x4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
-                0x0000000008003eb8                PROVIDE (__init_array_end, .)
+ .init_array    0x0000000008005578        0x4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+                0x000000000800557c                PROVIDE (__init_array_end, .)
 
-.fini_array     0x0000000008003eb8        0x4
+.fini_array     0x000000000800557c        0x4
                 [!provide]                        PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008003eb8        0x4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+ .fini_array    0x000000000800557c        0x4 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end, .)
-                0x0000000008003ebc                _sidata = LOADADDR (.data)
+                0x0000000008005580                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x10c load address 0x0000000008003ebc
+.data           0x0000000020000000      0x10c load address 0x0000000008005580
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -4754,59 +4850,64 @@ LOAD /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.maco
                 0x000000002000010c                . = ALIGN (0x4)
                 0x000000002000010c                _edata = .
 
-.jcr            0x000000002000010c        0x0 load address 0x0000000008003fc8
+.jcr            0x000000002000010c        0x0 load address 0x000000000800568c
  .jcr           0x000000002000010c        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.igot.plt       0x000000002000010c        0x0 load address 0x0000000008003fc8
+.igot.plt       0x000000002000010c        0x0 load address 0x000000000800568c
  .igot.plt      0x000000002000010c        0x0 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
                 0x000000002000010c                . = ALIGN (0x4)
 
-.bss            0x000000002000010c      0x750 load address 0x0000000008003fc8
+.bss            0x000000002000010c      0x764 load address 0x000000000800568c
                 0x000000002000010c                _sbss = .
                 0x000000002000010c                __bss_start__ = _sbss
  *(.bss)
  .bss           0x000000002000010c       0x1c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
  .bss           0x0000000020000128        0x1 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  *fill*         0x0000000020000129        0x3 
- .bss           0x000000002000012c       0x12 Src/main.o
-                0x000000002000012c                yoke1
-                0x0000000020000130                yoke2
-                0x0000000020000134                adcDataReady
-                0x0000000020000138                ledBuffPos
-                0x000000002000013c                adcCounter
- *fill*         0x000000002000013e        0x2 
- .bss           0x0000000020000140       0x14 Src/usbd_conf.o
+ .bss           0x000000002000012c       0x22 Src/main.o
+                0x000000002000012c                lastOne
+                0x0000000020000130                yoke1
+                0x0000000020000134                lastTwo
+                0x0000000020000138                yoke2
+                0x000000002000013c                x
+                0x0000000020000140                y
+                0x0000000020000144                adcDataReady
+                0x0000000020000148                ledBuffPos
+                0x000000002000014c                adcCounter
+ *fill*         0x000000002000014e        0x2 
+ .bss           0x0000000020000150       0x14 Src/usbd_conf.o
  *(.bss*)
  *(COMMON)
- COMMON         0x0000000020000154        0x4 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
-                0x0000000020000154                uwTick
- COMMON         0x0000000020000158       0xc0 Src/main.o
-                0x0000000020000158                adcData1
-                0x000000002000015c                adcData2
-                0x0000000020000160                hdma_adc
-                0x00000000200001a4                hadc
-                0x00000000200001f0                ADC1ConvertedValues
- COMMON         0x0000000020000218      0x224 Src/usb_device.o
-                0x0000000020000218                hUsbDeviceFS
- COMMON         0x000000002000043c      0x220 Src/usbd_conf.o
-                0x000000002000043c                hpcd_USB_FS
- COMMON         0x000000002000065c      0x200 Src/usbd_desc.o
-                0x000000002000065c                USBD_StrDesc
-                0x000000002000085c                . = ALIGN (0x4)
-                0x000000002000085c                _ebss = .
-                0x000000002000085c                __bss_end__ = _ebss
+ COMMON         0x0000000020000164        0x4 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
+                0x0000000020000164                uwTick
+ COMMON         0x0000000020000168       0xc4 Src/main.o
+                0x0000000020000168                adcData1
+                0x000000002000016c                buff
+                0x0000000020000174                bounds
+                0x0000000020000184                adcData2
+                0x0000000020000188                hdma_adc
+                0x00000000200001cc                hadc
+                0x0000000020000218                ADC1ConvertedValues
+ COMMON         0x000000002000022c      0x224 Src/usb_device.o
+                0x000000002000022c                hUsbDeviceFS
+ COMMON         0x0000000020000450      0x220 Src/usbd_conf.o
+                0x0000000020000450                hpcd_USB_FS
+ COMMON         0x0000000020000670      0x200 Src/usbd_desc.o
+                0x0000000020000670                USBD_StrDesc
+                0x0000000020000870                . = ALIGN (0x4)
+                0x0000000020000870                _ebss = .
+                0x0000000020000870                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002000085c      0x604 load address 0x0000000008003fc8
-                0x0000000020000860                . = ALIGN (0x8)
- *fill*         0x000000002000085c        0x4 
+                0x0000000020000870      0x600 load address 0x000000000800568c
+                0x0000000020000870                . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end, .)
                 [!provide]                        PROVIDE (_end, .)
-                0x0000000020000a60                . = (. + _Min_Heap_Size)
- *fill*         0x0000000020000860      0x200 
-                0x0000000020000e60                . = (. + _Min_Stack_Size)
- *fill*         0x0000000020000a60      0x400 
-                0x0000000020000e60                . = ALIGN (0x8)
+                0x0000000020000a70                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020000870      0x200 
+                0x0000000020000e70                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000a70      0x400 
+                0x0000000020000e70                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -4865,14 +4966,40 @@ LOAD /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.maco
  .ARM.attributes
                 0x000000000000043f       0x1e /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
  .ARM.attributes
-                0x000000000000045d       0x1e /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
+                0x000000000000045d       0x1e /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
  .ARM.attributes
-                0x000000000000047b       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+                0x000000000000047b       0x1e /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x00000000000004a7       0x1e /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x0000000000000499       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_fixunsdfsi.o)
+ .ARM.attributes
+                0x00000000000004c5       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(adddf3.o)
+ .ARM.attributes
+                0x00000000000004f1       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(muldf3.o)
+ .ARM.attributes
+                0x000000000000051d       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(subdf3.o)
+ .ARM.attributes
+                0x0000000000000549       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
+ .ARM.attributes
+                0x0000000000000575       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
+ .ARM.attributes
+                0x00000000000005a1       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatunsidf.o)
+ .ARM.attributes
+                0x00000000000005cd       0x1e /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x00000000000005eb       0x1e /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_clzsi2.o)
+ .ARM.attributes
+                0x0000000000000609       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
+ .ARM.attributes
+                0x0000000000000635       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(gedf2.o)
+ .ARM.attributes
+                0x0000000000000661       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(ledf2.o)
+ .ARM.attributes
+                0x000000000000068d       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000000000006b9       0x1e /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
 OUTPUT(Atari_Yoke.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x16c18
+.debug_info     0x0000000000000000    0x16cf2
  .debug_info    0x0000000000000000      0xe4f Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_info    0x0000000000000e4f     0x167a Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .debug_info    0x00000000000024c9      0xfc5 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
@@ -4886,16 +5013,16 @@ OUTPUT(Atari_Yoke.elf elf32-littlearm)
  .debug_info    0x000000000000ab28     0x146a Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
  .debug_info    0x000000000000bf92     0x1682 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .debug_info    0x000000000000d614      0xfb2 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_info    0x000000000000e5c6     0x205e Src/main.o
- .debug_info    0x0000000000010624     0x115c Src/stm32f0xx_hal_msp.o
- .debug_info    0x0000000000011780      0xfec Src/stm32f0xx_it.o
- .debug_info    0x000000000001276c      0xa7b Src/system_stm32f0xx.o
- .debug_info    0x00000000000131e7      0xd98 Src/usb_device.o
- .debug_info    0x0000000000013f7f     0x1ee9 Src/usbd_conf.o
- .debug_info    0x0000000000015e68      0xd32 Src/usbd_desc.o
- .debug_info    0x0000000000016b9a       0x7e startup/startup_stm32f070x6.o
+ .debug_info    0x000000000000e5c6     0x2138 Src/main.o
+ .debug_info    0x00000000000106fe     0x115c Src/stm32f0xx_hal_msp.o
+ .debug_info    0x000000000001185a      0xfec Src/stm32f0xx_it.o
+ .debug_info    0x0000000000012846      0xa7b Src/system_stm32f0xx.o
+ .debug_info    0x00000000000132c1      0xd98 Src/usb_device.o
+ .debug_info    0x0000000000014059     0x1ee9 Src/usbd_conf.o
+ .debug_info    0x0000000000015f42      0xd32 Src/usbd_desc.o
+ .debug_info    0x0000000000016c74       0x7e startup/startup_stm32f070x6.o
 
-.debug_abbrev   0x0000000000000000     0x3544
+.debug_abbrev   0x0000000000000000     0x357a
  .debug_abbrev  0x0000000000000000      0x2f4 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_abbrev  0x00000000000002f4      0x2ec Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .debug_abbrev  0x00000000000005e0      0x326 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
@@ -4909,16 +5036,16 @@ OUTPUT(Atari_Yoke.elf elf32-littlearm)
  .debug_abbrev  0x0000000000001c06      0x2bf Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
  .debug_abbrev  0x0000000000001ec5      0x320 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .debug_abbrev  0x00000000000021e5      0x20c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_abbrev  0x00000000000023f1      0x31f Src/main.o
- .debug_abbrev  0x0000000000002710      0x25d Src/stm32f0xx_hal_msp.o
- .debug_abbrev  0x000000000000296d      0x22c Src/stm32f0xx_it.o
- .debug_abbrev  0x0000000000002b99      0x205 Src/system_stm32f0xx.o
- .debug_abbrev  0x0000000000002d9e      0x206 Src/usb_device.o
- .debug_abbrev  0x0000000000002fa4      0x323 Src/usbd_conf.o
- .debug_abbrev  0x00000000000032c7      0x26b Src/usbd_desc.o
- .debug_abbrev  0x0000000000003532       0x12 startup/startup_stm32f070x6.o
+ .debug_abbrev  0x00000000000023f1      0x355 Src/main.o
+ .debug_abbrev  0x0000000000002746      0x25d Src/stm32f0xx_hal_msp.o
+ .debug_abbrev  0x00000000000029a3      0x22c Src/stm32f0xx_it.o
+ .debug_abbrev  0x0000000000002bcf      0x205 Src/system_stm32f0xx.o
+ .debug_abbrev  0x0000000000002dd4      0x206 Src/usb_device.o
+ .debug_abbrev  0x0000000000002fda      0x323 Src/usbd_conf.o
+ .debug_abbrev  0x00000000000032fd      0x26b Src/usbd_desc.o
+ .debug_abbrev  0x0000000000003568       0x12 startup/startup_stm32f070x6.o
 
-.debug_loc      0x0000000000000000     0x6354
+.debug_loc      0x0000000000000000     0x6477
  .debug_loc     0x0000000000000000       0x7c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_loc     0x000000000000007c      0xc12 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .debug_loc     0x0000000000000c8e      0x393 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
@@ -4932,13 +5059,13 @@ OUTPUT(Atari_Yoke.elf elf32-littlearm)
  .debug_loc     0x0000000000003d64      0x75d Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
  .debug_loc     0x00000000000044c1      0xb59 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .debug_loc     0x000000000000501a      0x23c Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_loc     0x0000000000005256       0xbb Src/main.o
- .debug_loc     0x0000000000005311       0x84 Src/stm32f0xx_hal_msp.o
- .debug_loc     0x0000000000005395       0xf3 Src/system_stm32f0xx.o
- .debug_loc     0x0000000000005488      0xc15 Src/usbd_conf.o
- .debug_loc     0x000000000000609d      0x2b7 Src/usbd_desc.o
+ .debug_loc     0x0000000000005256      0x1de Src/main.o
+ .debug_loc     0x0000000000005434       0x84 Src/stm32f0xx_hal_msp.o
+ .debug_loc     0x00000000000054b8       0xf3 Src/system_stm32f0xx.o
+ .debug_loc     0x00000000000055ab      0xc15 Src/usbd_conf.o
+ .debug_loc     0x00000000000061c0      0x2b7 Src/usbd_desc.o
 
-.debug_aranges  0x0000000000000000      0x998
+.debug_aranges  0x0000000000000000      0x9a0
  .debug_aranges
                 0x0000000000000000       0xb8 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_aranges
@@ -4966,23 +5093,23 @@ OUTPUT(Atari_Yoke.elf elf32-littlearm)
  .debug_aranges
                 0x00000000000006a0       0x50 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
  .debug_aranges
-                0x00000000000006f0       0x50 Src/main.o
+                0x00000000000006f0       0x58 Src/main.o
  .debug_aranges
-                0x0000000000000740       0x30 Src/stm32f0xx_hal_msp.o
+                0x0000000000000748       0x30 Src/stm32f0xx_hal_msp.o
  .debug_aranges
-                0x0000000000000770       0x50 Src/stm32f0xx_it.o
+                0x0000000000000778       0x50 Src/stm32f0xx_it.o
  .debug_aranges
-                0x00000000000007c0       0x28 Src/system_stm32f0xx.o
+                0x00000000000007c8       0x28 Src/system_stm32f0xx.o
  .debug_aranges
-                0x00000000000007e8       0x20 Src/usb_device.o
+                0x00000000000007f0       0x20 Src/usb_device.o
  .debug_aranges
-                0x0000000000000808      0x118 Src/usbd_conf.o
+                0x0000000000000810      0x118 Src/usbd_conf.o
  .debug_aranges
-                0x0000000000000920       0x50 Src/usbd_desc.o
+                0x0000000000000928       0x50 Src/usbd_desc.o
  .debug_aranges
-                0x0000000000000970       0x28 startup/startup_stm32f070x6.o
+                0x0000000000000978       0x28 startup/startup_stm32f070x6.o
 
-.debug_ranges   0x0000000000000000      0x9b8
+.debug_ranges   0x0000000000000000      0x9f0
  .debug_ranges  0x0000000000000000       0xa8 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_ranges  0x00000000000000a8       0xe8 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .debug_ranges  0x0000000000000190       0xb0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
@@ -4996,14 +5123,14 @@ OUTPUT(Atari_Yoke.elf elf32-littlearm)
  .debug_ranges  0x0000000000000628       0xa8 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
  .debug_ranges  0x00000000000006d0       0x78 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .debug_ranges  0x0000000000000748       0x40 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_ranges  0x0000000000000788       0x40 Src/main.o
- .debug_ranges  0x00000000000007c8       0x20 Src/stm32f0xx_hal_msp.o
- .debug_ranges  0x00000000000007e8       0x40 Src/stm32f0xx_it.o
- .debug_ranges  0x0000000000000828       0x18 Src/system_stm32f0xx.o
- .debug_ranges  0x0000000000000840       0x10 Src/usb_device.o
- .debug_ranges  0x0000000000000850      0x108 Src/usbd_conf.o
- .debug_ranges  0x0000000000000958       0x40 Src/usbd_desc.o
- .debug_ranges  0x0000000000000998       0x20 startup/startup_stm32f070x6.o
+ .debug_ranges  0x0000000000000788       0x78 Src/main.o
+ .debug_ranges  0x0000000000000800       0x20 Src/stm32f0xx_hal_msp.o
+ .debug_ranges  0x0000000000000820       0x40 Src/stm32f0xx_it.o
+ .debug_ranges  0x0000000000000860       0x18 Src/system_stm32f0xx.o
+ .debug_ranges  0x0000000000000878       0x10 Src/usb_device.o
+ .debug_ranges  0x0000000000000888      0x108 Src/usbd_conf.o
+ .debug_ranges  0x0000000000000990       0x40 Src/usbd_desc.o
+ .debug_ranges  0x00000000000009d0       0x20 startup/startup_stm32f070x6.o
 
 .debug_macro    0x0000000000000000     0xf57e
  .debug_macro   0x0000000000000000      0x332 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
@@ -5096,7 +5223,7 @@ OUTPUT(Atari_Yoke.elf elf32-littlearm)
  .debug_macro   0x000000000000edd5      0x3c4 Src/usbd_conf.o
  .debug_macro   0x000000000000f199      0x3e5 Src/usbd_desc.o
 
-.debug_line     0x0000000000000000     0xc4f2
+.debug_line     0x0000000000000000     0xc50e
  .debug_line    0x0000000000000000      0x923 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_line    0x0000000000000923      0xcfb Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .debug_line    0x000000000000161e      0x91c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
@@ -5110,16 +5237,16 @@ OUTPUT(Atari_Yoke.elf elf32-littlearm)
  .debug_line    0x00000000000065b7      0xab1 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
  .debug_line    0x0000000000007068      0xadf Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .debug_line    0x0000000000007b47      0x93a Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_line    0x0000000000008481      0x9d9 Src/main.o
- .debug_line    0x0000000000008e5a      0x7eb Src/stm32f0xx_hal_msp.o
- .debug_line    0x0000000000009645      0x81a Src/stm32f0xx_it.o
- .debug_line    0x0000000000009e5f      0x7dd Src/system_stm32f0xx.o
- .debug_line    0x000000000000a63c      0x930 Src/usb_device.o
- .debug_line    0x000000000000af6c      0xbcd Src/usbd_conf.o
- .debug_line    0x000000000000bb39      0x924 Src/usbd_desc.o
- .debug_line    0x000000000000c45d       0x95 startup/startup_stm32f070x6.o
+ .debug_line    0x0000000000008481      0x9f3 Src/main.o
+ .debug_line    0x0000000000008e74      0x7eb Src/stm32f0xx_hal_msp.o
+ .debug_line    0x000000000000965f      0x81a Src/stm32f0xx_it.o
+ .debug_line    0x0000000000009e79      0x7dd Src/system_stm32f0xx.o
+ .debug_line    0x000000000000a656      0x930 Src/usb_device.o
+ .debug_line    0x000000000000af86      0xbcd Src/usbd_conf.o
+ .debug_line    0x000000000000bb53      0x924 Src/usbd_desc.o
+ .debug_line    0x000000000000c477       0x97 startup/startup_stm32f070x6.o
 
-.debug_str      0x0000000000000000    0x46037
+.debug_str      0x0000000000000000    0x46076
  .debug_str     0x0000000000000000    0x42cd1 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
                                       0x42f7f (size before relaxing)
  .debug_str     0x0000000000042cd1      0x707 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
@@ -5146,20 +5273,20 @@ OUTPUT(Atari_Yoke.elf elf32-littlearm)
                                       0x439a1 (size before relaxing)
  .debug_str     0x0000000000045a56       0x79 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
                                       0x438ce (size before relaxing)
- .debug_str     0x0000000000045acf      0x1d9 Src/main.o
-                                      0x44219 (size before relaxing)
- .debug_str     0x0000000000045ca8       0x1b Src/stm32f0xx_hal_msp.o
+ .debug_str     0x0000000000045acf      0x20f Src/main.o
+                                      0x44249 (size before relaxing)
+ .debug_str     0x0000000000045cde       0x1b Src/stm32f0xx_hal_msp.o
                                       0x4302b (size before relaxing)
- .debug_str     0x0000000000045cc3       0x8c Src/stm32f0xx_it.o
+ .debug_str     0x0000000000045cf9       0x9a Src/stm32f0xx_it.o
                                       0x42f6a (size before relaxing)
- .debug_str     0x0000000000045d4f       0x3b Src/system_stm32f0xx.o
+ .debug_str     0x0000000000045d93       0x3b Src/system_stm32f0xx.o
                                       0x42a98 (size before relaxing)
- .debug_str     0x0000000000045d8a       0x14 Src/usb_device.o
+ .debug_str     0x0000000000045dce       0x14 Src/usb_device.o
                                       0x439b1 (size before relaxing)
- .debug_str     0x0000000000045d9e       0x7c Src/usbd_conf.o
+ .debug_str     0x0000000000045de2       0x7c Src/usbd_conf.o
                                       0x44393 (size before relaxing)
- .debug_str     0x0000000000045e1a      0x21d Src/usbd_desc.o
-                                      0x43763 (size before relaxing)
+ .debug_str     0x0000000000045e5e      0x218 Src/usbd_desc.o
+                                      0x4375e (size before relaxing)
 
 .comment        0x0000000000000000       0x7f
  .comment       0x0000000000000000       0x7f Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
@@ -5184,7 +5311,7 @@ OUTPUT(Atari_Yoke.elf elf32-littlearm)
  .comment       0x000000000000007f       0x80 Src/usbd_conf.o
  .comment       0x000000000000007f       0x80 Src/usbd_desc.o
 
-.debug_frame    0x0000000000000000     0x164c
+.debug_frame    0x0000000000000000     0x1898
  .debug_frame   0x0000000000000000      0x174 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_frame   0x0000000000000174      0x2a0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o
  .debug_frame   0x0000000000000414       0xe4 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
@@ -5198,12 +5325,23 @@ OUTPUT(Atari_Yoke.elf elf32-littlearm)
  .debug_frame   0x0000000000000c70      0x1bc Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o
  .debug_frame   0x0000000000000e2c      0x168 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
  .debug_frame   0x0000000000000f94       0xb8 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o
- .debug_frame   0x000000000000104c       0xc0 Src/main.o
- .debug_frame   0x000000000000110c       0x5c Src/stm32f0xx_hal_msp.o
- .debug_frame   0x0000000000001168       0x98 Src/stm32f0xx_it.o
- .debug_frame   0x0000000000001200       0x38 Src/system_stm32f0xx.o
- .debug_frame   0x0000000000001238       0x28 Src/usb_device.o
- .debug_frame   0x0000000000001260      0x2f8 Src/usbd_conf.o
- .debug_frame   0x0000000000001558       0xa8 Src/usbd_desc.o
- .debug_frame   0x0000000000001600       0x20 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
- .debug_frame   0x0000000000001620       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
+ .debug_frame   0x000000000000104c       0xe8 Src/main.o
+ .debug_frame   0x0000000000001134       0x5c Src/stm32f0xx_hal_msp.o
+ .debug_frame   0x0000000000001190       0x98 Src/stm32f0xx_it.o
+ .debug_frame   0x0000000000001228       0x38 Src/system_stm32f0xx.o
+ .debug_frame   0x0000000000001260       0x28 Src/usb_device.o
+ .debug_frame   0x0000000000001288      0x2f8 Src/usbd_conf.o
+ .debug_frame   0x0000000000001580       0xa8 Src/usbd_desc.o
+ .debug_frame   0x0000000000001628       0x20 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000000000001648       0x20 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_divsi3.o)
+ .debug_frame   0x0000000000001668       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(_fixunsdfsi.o)
+ .debug_frame   0x0000000000001694       0x3c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(adddf3.o)
+ .debug_frame   0x00000000000016d0       0x3c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(muldf3.o)
+ .debug_frame   0x000000000000170c       0x38 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(subdf3.o)
+ .debug_frame   0x0000000000001744       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(fixdfsi.o)
+ .debug_frame   0x0000000000001770       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatsidf.o)
+ .debug_frame   0x000000000000179c       0x28 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(floatunsidf.o)
+ .debug_frame   0x00000000000017c4       0x38 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(eqdf2.o)
+ .debug_frame   0x00000000000017fc       0x38 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(gedf2.o)
+ .debug_frame   0x0000000000001834       0x38 /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/libgcc.a(ledf2.o)
+ .debug_frame   0x000000000000186c       0x2c /Users/mitchellbond/.p2/pool/plugins/fr.ac6.mcu.externaltools.arm-none.macos64_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a(lib_a-init.o)
