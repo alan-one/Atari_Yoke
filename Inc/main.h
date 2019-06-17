@@ -94,7 +94,22 @@
 #define BOUND_BUFFER 100
 #define LED_STARTUP_DELAY 50
 #define NUMBER_LEDS 8
-#define ADC_BUFFER 400
+#define ADC_BUFFER 100
+
+//Max counts for blinky LEDs. Controls blink rate.
+#define STATUS_COUNT_MAX 100000
+#define STATUS_COUNT_ON 2000
+#define AUX_COUNT_MAX 100000
+#define AUX_COUNT_ON 50000
+
+//Max count for toggling modes.
+#define MODE_COUNT_MAX 300000
+
+//Value to add/subtract for dead spot compensation.
+#define X_DEADSPOT_LO 410    //10% of max value.
+#define X_DEADSPOT_HI 410    //10% of max value.
+#define Y_DEADSPOT_LO 410    //10% of max value.
+#define Y_DEADSPOT_HI 410    //10% of max value.
 
 #define X_ADC_LB   0         //Buffer index for X-axis ADC values, lower byte.
 #define X_ADC_UB   1         //Buffer index for X-axis ADC values, upper byte.
@@ -105,6 +120,17 @@
 #define ADC_UPPER_BOUND 3686  //90% of max value.
 #define ADC_LOWER_BOUND 410   //10% of max value.
 
+#define TRUE 1
+#define FALSE 0
+
+//High, middle and low values for X and Y ADC values.
+#define X_HIGH 4095
+#define Y_HIGH 4095
+#define X_MIDDLE 2047
+#define Y_MIDDLE 2047
+#define X_LOW 0
+#define Y_LOW 0
+
 void SystemClock_Config(void);
 void MX_GPIO_Init(void);
 void MX_DMA_Init(void);
@@ -113,7 +139,6 @@ void MX_ADC_Init(void);
 void do_led_array(uint8_t); //Turn on an array of LEDs
 void init_leds();           //Fancy initialization LED blinky blinky.
 void run_leds();            //Update the LEDS during normal use.
-
 
 void _Error_Handler(char *, int);
 #define Error_Handler() _Error_Handler(__FILE__, __LINE__)

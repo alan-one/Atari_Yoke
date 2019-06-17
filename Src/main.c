@@ -94,6 +94,16 @@ uint8_t led_pattern[] =
 //Length of the array above.
 int pat_len = 19;
 
+//Switch for dead spot compensation.
+uint8_t ds_comp = FALSE;
+
+//Status and aux counting variables.
+uint32_t status_count = 0;
+uint32_t aux_count = 0;
+
+//Mode change counting variable.
+uint32_t mode_count = 0;
+
 int main(void) {
 
 	//Reset of all peripherals, Initializes the Flash interface and the Systick.
@@ -172,9 +182,12 @@ void do_led_array(uint8_t leds)
 //Update the LEDS during normal use.
 void run_leds()
 {
+	uint32_t seq_count = 0;
+
 	//Left trigger button.
 	if (HAL_GPIO_ReadPin(S1_LEFT_TRIG_GPIO_Port, S1_LEFT_TRIG_Pin) == 0)
 	{
+		seq_count++;
 		buff[BUTTONS] |= 0b00000001;
 		HAL_GPIO_WritePin(ledArrayPorts[0], ledArrayPins[0], GPIO_PIN_RESET);
 	}
@@ -200,6 +213,7 @@ void run_leds()
 	//Left thumb button.
 	if (HAL_GPIO_ReadPin(S3_LEFT_THUMB_GPIO_Port, S3_LEFT_THUMB_Pin) == 0)
 	{
+		seq_count++;
 		buff[BUTTONS] |= 0b00000100;
 		HAL_GPIO_WritePin(ledArrayPorts[2], ledArrayPins[2], GPIO_PIN_RESET);
 	}
@@ -224,6 +238,7 @@ void run_leds()
 	//Illuminate LEDs when at upper and lower 10% extents of the ADC values.
     if ((averageX > ADC_UPPER_BOUND) || (averageX < ADC_LOWER_BOUND))
 	{
+    	seq_count++;
 		HAL_GPIO_WritePin(ledArrayPorts[5], ledArrayPins[5], GPIO_PIN_RESET);
 	}
 	else
@@ -233,6 +248,7 @@ void run_leds()
 
 	if ((averageY > ADC_UPPER_BOUND) || (averageY < ADC_LOWER_BOUND))
 	{
+		seq_count++;
 		HAL_GPIO_WritePin(ledArrayPorts[4], ledArrayPins[4], GPIO_PIN_RESET);
 	}
 	else
@@ -240,7 +256,75 @@ void run_leds()
 		HAL_GPIO_WritePin(ledArrayPorts[4], ledArrayPins[4], GPIO_PIN_SET);
 	}
 
-	HAL_GPIO_TogglePin(STATUS_GPIO_Port, STATUS_Pin);
+	//Update aux and status LED counters.
+	status_count++;
+	aux_count++;
+
+	//Reset counters if necessary.
+	if(status_count > STATUS_COUNT_MAX)
+	{
+		status_count = 0;
+	}
+
+	if(aux_count > AUX_COUNT_MAX)
+	{
+		aux_count = 0;
+	}
+
+	//Blink the status LED.
+    if(status_count <= STATUS_COUNT_ON)
+    {
+    	HAL_GPIO_WritePin(ledArrayPorts[6], ledArrayPins[6], GPIO_PIN_RESET);
+    }
+    else
+    {
+    	HAL_GPIO_WritePin(ledArrayPorts[6], ledArrayPins[6], GPIO_PIN_SET);
+    }
+
+    //Turn on aux LED solid if dead zone compensation is turned off.
+    if(ds_comp == FALSE)
+    {
+    	HAL_GPIO_WritePin(ledArrayPorts[7], ledArrayPins[7], GPIO_PIN_RESET);
+    }
+    //Blink the aux LED.
+    else
+    {
+    	if(aux_count >= AUX_COUNT_ON)
+    	{
+    		HAL_GPIO_WritePin(ledArrayPorts[7], ledArrayPins[7], GPIO_PIN_RESET);
+    	}
+    	else
+    	{
+    		HAL_GPIO_WritePin(ledArrayPorts[7], ledArrayPins[7], GPIO_PIN_SET);
+    	}
+    }
+
+    //Check if mode toggling button combination is being pressed.
+    //If so, update mode change counter.
+    if(seq_count == 4)
+    {
+        mode_count++;
+    }
+    else
+    {
+    	mode_count = 0;
+    }
+
+    //Check if mode change combination has been pressed for 5 seconds.
+    //If it has, change modes.
+    if(mode_count >= MODE_COUNT_MAX)
+    {
+    	mode_count = 0;
+
+    	if(ds_comp == TRUE)
+    	{
+    		ds_comp = FALSE;
+    	}
+    	else
+    	{
+    		ds_comp = TRUE;
+    	}
+    }
 }
 
 //System Clock Configuration
@@ -283,15 +367,13 @@ void SystemClock_Config(void)
 		_Error_Handler(__FILE__, __LINE__);
 	}
 
-	/**Configure the Systick interrupt time
-	 */
+	//Configure the Systick interrupt time
 	HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq() / 1000);
 
-	/**Configure the Systick
-	 */
+	//Configure the Systick
 	HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
 
-	/* SysTick_IRQn interrupt configuration */
+	//SysTick_IRQn interrupt configuration
 	HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
 }
 
@@ -359,17 +441,17 @@ void MX_GPIO_Init(void)
 	__HAL_RCC_GPIOA_CLK_ENABLE();
 	__HAL_RCC_GPIOB_CLK_ENABLE();
 
-	/*Configure GPIO pin Output Level */
+	//Configure GPIO pin Output Level
 	HAL_GPIO_WritePin(GPIOB, L_TRIG_LED_Pin | R_TRIG_LED_Pin | L_THUMB_LED_Pin |
         R_THUMB_LED_Pin | PITCH_LED_Pin | ROLL_LED_Pin | STATUS_Pin | AUX_Pin, GPIO_PIN_SET);
 
-	/*Configure GPIO pins : PITCH_Pin ROLL_Pin */
+	//Configure GPIO pins : PITCH_Pin ROLL_Pin
 	GPIO_InitStruct.Pin = PITCH_Pin | ROLL_Pin;
 	GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
 	GPIO_InitStruct.Pull = GPIO_NOPULL;
 	HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-	/*Configure GPIO pins : S1_LEFT_TRIG_Pin S2_RIGHT_TRIG_Pin S3_LEFT_THUMB_Pin S4_RIGHT_THUMB_Pin */
+	//Configure GPIO pins : S1_LEFT_TRIG_Pin S2_RIGHT_TRIG_Pin S3_LEFT_THUMB_Pin S4_RIGHT_THUMB_Pin
 	GPIO_InitStruct.Pin = S1_LEFT_TRIG_Pin | S2_RIGHT_TRIG_Pin
 			| S3_LEFT_THUMB_Pin | S4_RIGHT_THUMB_Pin;
 	GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
@@ -389,7 +471,7 @@ void MX_GPIO_Init(void)
 	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
 	HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-	/*Configure GPIO pins : DIP_4_Pin DIP_3_Pin DIP_2_Pin DIP_1_Pin */
+	//Configure GPIO pins : DIP_4_Pin DIP_3_Pin DIP_2_Pin DIP_1_Pin
 	GPIO_InitStruct.Pin = DIP_4_Pin | DIP_3_Pin | DIP_2_Pin | DIP_1_Pin;
 	GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
 	GPIO_InitStruct.Pull = GPIO_PULLUP;
@@ -400,6 +482,7 @@ void MX_GPIO_Init(void)
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* AdcHandle)
 {
 	averageX = 0;
+	averageY = 0;
 
 	//Average ADC samples for both X and Y to remove any noise.
 	for (int i = 0; i < ADC_BUFFER / 2; i++)
@@ -412,16 +495,48 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* AdcHandle)
 	averageX /= (ADC_BUFFER / 2);
 	averageY /= (ADC_BUFFER / 2);
 
+	//Do dead spot compensation if enabled.
+    if(ds_comp)
+	{
+    	if(averageX >= X_HIGH - X_DEADSPOT_HI)
+    	{
+    		averageX = X_HIGH;
+    	}
+    	else if((averageX >= X_MIDDLE) && (averageX + X_DEADSPOT_HI <= X_HIGH))
+	    {
+	    	averageX += X_DEADSPOT_HI;
+	    }
+	    else if((averageX < X_MIDDLE) && (averageX >= X_DEADSPOT_LO))
+	    {
+	    	averageX -= X_DEADSPOT_LO;
+	    }
+	    else
+	    {
+	    	averageX = X_LOW;
+	    }
+
+    	if(averageY >= Y_HIGH - Y_DEADSPOT_HI)
+    	{
+    		averageY = Y_HIGH;
+    	}
+    	else if((averageY >= Y_MIDDLE) && (averageY + Y_DEADSPOT_HI <= Y_HIGH))
+	    {
+	        averageY += Y_DEADSPOT_HI;
+	    }
+	    else if((averageY < Y_MIDDLE) && (averageY >= Y_DEADSPOT_LO))
+	    {
+	       	averageY -= Y_DEADSPOT_LO;
+	    }
+	    else
+	    {
+	    	averageY = Y_LOW;
+	    }
+	}
+
 	buff[X_ADC_LB] = averageX;
 	buff[X_ADC_UB] = averageX >> 8;
 	buff[Y_ADC_LB] = averageY;
 	buff[Y_ADC_UB] = averageY >> 8;
-
-	//Toggle the AUX LED if not in LED init mode.
-	if(!do_led_init)
-	{
-	    HAL_GPIO_TogglePin(AUX_GPIO_Port, AUX_Pin);
-	}
 }
 
 //This function is executed in case of error occurrence.
