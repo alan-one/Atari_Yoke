@@ -10,7 +10,7 @@
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
-  * Copyright (c) 2017 STMicroelectronics International N.V. 
+  * Copyright (c) 2018 STMicroelectronics International N.V. 
   * All rights reserved.
   *
   * Redistribution and use in source and binary forms, with or without 
@@ -108,7 +108,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
     hdma_adc.Init.MemInc = DMA_MINC_ENABLE;
     hdma_adc.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
     hdma_adc.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
-    hdma_adc.Init.Mode = DMA_NORMAL;
+    hdma_adc.Init.Mode = DMA_CIRCULAR;
     hdma_adc.Init.Priority = DMA_PRIORITY_HIGH;
     if (HAL_DMA_Init(&hdma_adc) != HAL_OK)
     {

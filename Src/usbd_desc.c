@@ -10,7 +10,7 @@
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
-  * Copyright (c) 2017 STMicroelectronics International N.V. 
+  * Copyright (c) 2018 STMicroelectronics International N.V. 
   * All rights reserved.
   *
   * Redistribution and use in source and binary forms, with or without 
@@ -52,51 +52,15 @@
 #include "usbd_desc.h"
 #include "usbd_conf.h"
 
-/** @addtogroup STM32_USB_OTG_DEVICE_LIBRARY
-  * @{
-  */
+#define USBD_VID                     1155
+#define USBD_LANGID_STRING           1033
+#define USBD_PID_FS                  22315
+#define USBD_MANUFACTURER_STRING     "Alan-1"
+#define USBD_PRODUCT_STRING_FS       "USB Flight Yoke Adapter"
+#define USBD_SERIALNUMBER_STRING_FS  "0000"
+#define USBD_CONFIGURATION_STRING_FS "HID Config"
+#define USBD_INTERFACE_STRING_FS     "HID Yoke Interface"
 
-/** @defgroup USBD_DESC 
-  * @brief USBD descriptors module
-  * @{
-  */ 
-
-/** @defgroup USBD_DESC_Private_TypesDefinitions
-  * @{
-  */ 
-/**
-  * @}
-  */ 
-
-/** @defgroup USBD_DESC_Private_Defines
-  * @{
-  */ 
-#define USBD_VID     1155
-#define USBD_LANGID_STRING     1033
-#define USBD_MANUFACTURER_STRING     "ALAN-1"
-#define USBD_PID_FS     22315
-#define USBD_PRODUCT_STRING_FS     "ALAN-1 Flight Yoke Controller"
-#define USBD_SERIALNUMBER_STRING_FS     "00000000001A"
-#define USBD_CONFIGURATION_STRING_FS     "HID Config"
-#define USBD_INTERFACE_STRING_FS     "HID Interface"
-
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0*/
-/**
-  * @}
-  */ 
-
-/** @defgroup USBD_DESC_Private_Macros
-  * @{
-  */ 
-/**
-  * @}
-  */ 
-
-/** @defgroup USBD_DESC_Private_Variables
-  * @{
-  */ 
 uint8_t *     USBD_FS_DeviceDescriptor( USBD_SpeedTypeDef speed , uint16_t *length);
 uint8_t *     USBD_FS_LangIDStrDescriptor( USBD_SpeedTypeDef speed , uint16_t *length);
 uint8_t *     USBD_FS_ManufacturerStrDescriptor ( USBD_SpeedTypeDef speed , uint16_t *length);
@@ -126,24 +90,24 @@ USBD_DescriptorsTypeDef FS_Desc =
 /* USB Standard Device Descriptor */
 __ALIGN_BEGIN uint8_t USBD_FS_DeviceDesc[USB_LEN_DEV_DESC] __ALIGN_END =
   {
-    0x12,                       /*bLength */
-    USB_DESC_TYPE_DEVICE,       /*bDescriptorType*/
-    0x00,                       /* bcdUSB */  
+    0x12,                      //bLength
+    USB_DESC_TYPE_DEVICE,      //bDescriptorType
+    0x00,                      //bcdUSB
     0x02,
-    0x00,                       /*bDeviceClass*/
-    0x00,                       /*bDeviceSubClass*/
-    0x00,                       /*bDeviceProtocol*/
-    USB_MAX_EP0_SIZE,          /*bMaxPacketSize*/
-    LOBYTE(USBD_VID),           /*idVendor*/
-    HIBYTE(USBD_VID),           /*idVendor*/
-    LOBYTE(USBD_PID_FS),           /*idVendor*/
-    HIBYTE(USBD_PID_FS),           /*idVendor*/
-    0x00,                       /*bcdDevice rel. 2.00*/
+    0x00,                      //bDeviceClass
+    0x00,                      //bDeviceSubClass
+    0x00,                      //bDeviceProtocol
+    USB_MAX_EP0_SIZE,          //bMaxPacketSize
+    LOBYTE(USBD_VID),          //idVendor
+    HIBYTE(USBD_VID),          //idVendor
+    LOBYTE(USBD_PID_FS),       //idVendor
+    HIBYTE(USBD_PID_FS),       //idVendor
+    0x00,                      //bcdDevice release 2.00
     0x02,
-    USBD_IDX_MFC_STR,           /*Index of manufacturer  string*/
-    USBD_IDX_PRODUCT_STR,       /*Index of product string*/
-    USBD_IDX_SERIAL_STR,        /*Index of serial number string*/
-    USBD_MAX_NUM_CONFIGURATION  /*bNumConfigurations*/
+    USBD_IDX_MFC_STR,          //Index of manufacturer  string
+    USBD_IDX_PRODUCT_STR,      //Index of product string
+    USBD_IDX_SERIAL_STR,       //Index of serial number string
+    USBD_MAX_NUM_CONFIGURATION //bNumConfigurations
   } ; 
 /* USB_DeviceDescriptor */
 

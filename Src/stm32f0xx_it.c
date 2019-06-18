@@ -4,7 +4,7 @@
   * @brief   Interrupt Service Routines.
   ******************************************************************************
   *
-  * COPYRIGHT(c) 2017 STMicroelectronics
+  * COPYRIGHT(c) 2018 STMicroelectronics
   *
   * Redistribution and use in source and binary forms, with or without modification,
   * are permitted provided that the following conditions are met:
@@ -35,12 +35,9 @@
 #include "stm32f0xx.h"
 #include "stm32f0xx_it.h"
 
-/* USER CODE BEGIN 0 */
-#define ADC_BUFFER 20
 
+//#define ADC_BUFFER 20
 
-
-/* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
 extern PCD_HandleTypeDef hpcd_USB_FS;

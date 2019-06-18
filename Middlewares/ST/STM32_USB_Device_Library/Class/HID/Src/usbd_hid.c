@@ -157,7 +157,7 @@ __ALIGN_BEGIN static uint8_t USBD_HID_CfgDesc[USB_HID_CONFIG_DESC_SIZ]  __ALIGN_
   0x00,         /*bAlternateSetting: Alternate setting*/
   0x01,         /*bNumEndpoints*/
   0x03,         /*bInterfaceClass: HID*/
-  0x01,         /*bInterfaceSubClass : 1=BOOT, 0=no boot*/
+  0x00,         /*bInterfaceSubClass : 1=BOOT, 0=no boot*/
   0x00,         /*nInterfaceProtocol : 0=none, 1=keyboard, 2=mouse*/
   0,            /*iInterface: Index of string descriptor*/
   /******************** Descriptor of Joystick Mouse HID ********************/
@@ -210,43 +210,41 @@ __ALIGN_BEGIN static uint8_t USBD_HID_DeviceQualifierDesc[USB_LEN_DEV_QUALIFIER_
   0x00,
   0x00,
   0x40,
-  0x01,
+0x01,
   0x00,
 };
 
 __ALIGN_BEGIN static uint8_t HID_MOUSE_ReportDesc[HID_MOUSE_REPORT_DESC_SIZE]  __ALIGN_END =
 {
-	    0x05, 0x01,                    // USAGE_PAGE (Generic Desktop)
-	    0x15, 0x00,                    // LOGICAL_MINIMUM (0)
-	    0x09, 0x04,                    // USAGE (Joystick)
-	    0xa1, 0x01,                    // COLLECTION (Application)
-	    0x05, 0x01,                    //   USAGE_PAGE (Generic Desktop)
-	    0x09, 0x01,                    //   USAGE (Pointer)
-	    0xa1, 0x00,                    //   COLLECTION (Physical)
-	    0x09, 0x30,                    //     USAGE (X)
-	    0x09, 0x31,                    //     USAGE (Y)
-	    0x75, 0x10,                    //     REPORT_SIZE (16)
-	    0x95, 0x02,                    //     REPORT_COUNT (2)
-	    0x46, 0xFF, 0x07,                   //     PHYSICAL_MAXIMUM (2047)
-	    0x26, 0xFF, 0x07,                   //     LOGICAL_MAXIMUM (2047)
-	    0x16, 0x00, 0xF8,                   //     LOGICAL_MINIMUM (-2048)
-	    0x36, 0x00, 0xF8,                    //     PHYSICAL_MINIMUM (-2048)
-	    0x81, 0x02,                    //     INPUT (Data,Var,Abs)
-	    0xc0,                          //   END_COLLECTION
-	    0x05, 0x09,                    //   USAGE_PAGE (Button)
-	    0x19, 0x01,                    //   USAGE_MINIMUM (Button 1)
-	    0x29, 0x04,                    //   USAGE_MAXIMUM (Button 4)
-	    0x15, 0x00,                    //   LOGICAL_MINIMUM (0)
-	    0x25, 0x01,                    //   LOGICAL_MAXIMUM (1)
-	    0x75, 0x01,                    //   REPORT_SIZE (1)
-	    0x95, 0x04,                    //   REPORT_COUNT (4)
-	    0x55, 0x00,                    //   UNIT_EXPONENT (0)
-	    0x65, 0x00,                    //   UNIT (None)
-	    0x81, 0x02,                    //   INPUT (Data,Var,Abs)
-		0x75, 0x01,                    //   REPORT_SIZE (4)
-	    0x95, 0x04,                    //   REPORT_COUNT (1)
-		0x81, 0x03,					   //INPUT (Cnst,Var,Abs)
-	    0xc0                           // END_COLLECTION
+    0x05, 0x01,       //USAGE_PAGE (Generic Desktop)
+    0x09, 0x04,       //USAGE (Joystick)
+    0xA1, 0x01,       //COLLECTION (Application)
+    0x09, 0x01,       //USAGE (Pointer)
+    0xA1, 0x00,       //COLLECTION (Physical)
+    0x09, 0x30,       //USAGE (X)
+    0x09, 0x31,       //USAGE (Y)
+    0x75, 0x10,       //REPORT_SIZE (16)
+    0x95, 0x02,       //REPORT_COUNT (2)
+    0x46, 0xFF, 0x0F, //PHYSICAL_MAXIMUM (4095)
+	0x26, 0xFF, 0x0F, //LOGICAL_MAXIMUM (4095)
+	0x15, 0x00,       //LOGICAL MINIMUM (0)
+	0x35, 0x00,       //PHYSICAL_MINIMUM (0)
+	0x81, 0x02,       //INPUT (Data,Var,Abs)
+	0xC0,             //END_COLLECTION
+	0x05, 0x09,       //USAGE_PAGE (Button)
+	0x19, 0x01,       //USAGE_MINIMUM (Button 1)
+	0x29, 0x04,       //USAGE_MAXIMUM (Button 4)
+	0x15, 0x00,       //LOGICAL_MINIMUM (0)
+	0x25, 0x01,       //LOGICAL_MAXIMUM (1)
+	0x75, 0x01,       //REPORT_SIZE (1)
+	0x95, 0x04,       //REPORT_COUNT (4)
+	0x55, 0x00,       //UNIT_EXPONENT (0)
+	0x65, 0x00,       //UNIT (None)
+	0x81, 0x02,       //INPUT (Data,Var,Abs)
+	0x75, 0x01,       //REPORT_SIZE (1)
+	0x95, 0x04,       //REPORT_COUNT (4)
+	0x81, 0x03,       //INPUT (Cnst,Var,Abs)
+	0xC0              //END_COLLECTION
 }; 
 
 /**

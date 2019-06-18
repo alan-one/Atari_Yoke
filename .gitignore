@@ -1,2 +1,5 @@
-/Debug/
+/Release/*
+/Debug/*
+*.DS_Store
+*.settings/
 /Release/
